@@ -1,2 +1,3 @@
-# sweetcase
-agence de voyage
+# Sweetcase
+
+Website for a travel agency (homework)
