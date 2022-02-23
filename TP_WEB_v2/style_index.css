@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: 'gin_and_soda_personal_useRg';
+    src: url('font/gin_and_soda_personal_use-webfont.woff2') format('woff2'),
+         url('font/gin_and_soda_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
+header {  
+    background: url("img/pays/paysage.jpg");
+    font-family: 'gin_and_soda_personal_useRg';
+    text-align: center;
+    border: 2px solid black;
+    padding: 10%;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: center;
+}
+h1{
+  color: azure;
+  text-shadow: 0px 0px 20px black; 
+}
+p{
+  padding-bottom: 1rem;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+
+#left{
+  float: left;
+  
+}
+#right{
+  float:right
+}
+.illustration{
+  height: 20vw;
+  width: 20vw;
+}
+h3{
+  color: azure;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 30px;
+  line-height: 28px;
+}
+.container { 
+  max-width: 30vw;
+  min-width: 15em;
+  max-height: 70vw;
+  min-height: 30em;
+  overflow: scroll;
+  margin: 10vw;
+  padding: 5vw;
+  border: 3px solid #ffffff; 
+  background: #b174c9;
+  text-align: center;
+  image-rendering: 30;
+  height: 55vw;
+}
+
+h1#principal{ 
+  font-size:10vw
+}
+
+h1#slogan{
+  font-style : italic;
+  font-size:3vw;
+  border: 0.5vw solid white;
+}
+h2{
+  font-size: 3vw;
+}
+
+body {
+    
+    background: #f8e796; 
+    background-size: cover;
+    
+}
+.normal{
+  margin:10vw;
+}
+
+li {
+
+  display: inline-block; 
+  padding: 8px;
+  background-color: #dddddd;
+  box-sizing : border-box;
+  line-height: 24px;
+  position: static;
+  z-index:auto;
+  background: #FDC40A;
+  
+}
+.color-list {
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-direction: row;
+}
+
+.volet {
+  flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
+  box-shadow: 0 0 30px #424242;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.473);
+  transition: all 0.5s ease-in-out;
+}
+
+.volet:hover{
+    flex-basis: 40%;
+}
+
+
+.name {
+  font-size: 1.2vw;
+  opacity: 1;
+}
+
+.details li {
+  line-height: 2vw;
+  
+}
+
+
+
+#volet1 {
+   /* background: #c98b70; */
+    background: rgba(248, 250, 120, 0.90);
+  
+}
+
+#volet2 {
+    /*background: #c98b70; */
+    background: rgba(175, 116, 76, 0.95);
+    
+}
+
+#volet3 {
+    /*background: #635270; */
+    background: rgba(147, 76, 175, 0.95);
+}
+#volet4 {
+  background: rgba(248, 250, 120, 0.90);
+  /*background: #f8e796; */
+}
+
+* {
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* ---footer---*/
+body > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}

@@ -1,0 +1,7 @@
+
+
+@media (max-width: 700px){
+    table, tbody { display: block; }
+    tr { display: table; }
+    td { display: table-row; }
+}
