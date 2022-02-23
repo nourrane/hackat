@@ -1,0 +1,120 @@
+<!-- Adaptation ecran tel -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon/icon_onglet.ico"/>
+        <link rel="stylesheet" href="stylesheet/normalize.css"/>
+        <link rel="stylesheet" href="stylesheet/style_destination.css" />
+        <title> Sweetcase </title>
+    </head>
+   <body>
+
+    <div class="background">
+        <div class=" video-wrapper">
+            <video id="videoBG" autoplay muted loop>
+                <source src="img/background_video.mp4" type="video/mp4"/>
+            </video>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="img/icon/logo.png" alt="logo" width="150"/>
+    </div>
+
+    <header>
+        <h1 id= "maintitle"> Sweetcase </h1>
+        <br/>
+        <nav>
+            <div class="color-list">
+                <section class="volet" id="volet1">
+                    <h2 class="name"> <a href="index.html">Accueil</a> </h2>
+                </section>
+                <section class="volet" id="volet2">
+                    <h2 class="name"><a href="presentation.html">Notre agence</a></h2>
+                </section>
+                <section class="volet" id="volet3">
+                    <h2 class="name"><a href="destination.html">Nos destinations</a></h2>
+                </section>
+                <section class="volet" id="volet4">
+                    <h2 class="name"><a href="index.html#conseils">Nos équipes</a></h2>
+                </section>
+            </div>
+        </nav>    
+    </header>
+
+    <section>
+        <article>
+            <h1>Nos destinations</h1>
+            <h2 id="destination">Destination - sur mesure</h2>
+            <p>
+                Vous êtes seul, en duo, entre amis ou en famille,
+                et vous avez un projet de voyage dans le monde ?
+                <br/><br/>
+                Pour un voyage en liberté, ou des vacances "clés-en-main",
+                nous vous conseillons et vous apportons le soutien logistique dont vous avez besoin.
+
+                Confiez-nous l'organisation de vos week-ends et vacances écologiques !
+                Nous aurons à coeur d'étudier votre demande et de préparer pour vous un voyage-sur-mesure,
+                en tenant compte de vos envies, de vos éventuelles contraintes et de votre budget.
+                <br/><br/>
+                Quelle que soit votre destination, nous sélectionnerons en première intention, des prestations
+                inscrites dans une démarche de tourisme durable (transport doux, hébergement éco-responsable
+                , locavore, activités décarbonées, ...)
+
+                <br/><br>
+                Si vous êtes intéressez par la formule sur mesure, veillez remplir le formulaire ci-dessous:
+            </p>
+            </article>
+            <form>
+                <script src="script/script_destination.js"></script>
+                <fieldset> 
+                    <legend>
+                        Formulaire - Voyage sur mesure
+                    </legend><br/>
+                    Nom: <input type="text" name="nom"/><br/><br/>
+                    Prénom: <input type="text" name="prénom"><br/><br/>
+                    <label for="email">Entrez votre adresse-mail:</label>
+                    <input type="email" id="email" name="email"/>
+                    <br/><br/>
+                    <label> Vos envies: </label><br/><br/>
+                    <input type="checkbox" id="roadtrip" name="roadtrip"
+                    value="roadtrip"/>
+                        <label for="roadtrip">Roadtrip</label> <br/>
+                    <input type="checkbox" id="detente" name="detente"
+                    value="detente"/>
+                        <label for="detente">Détente</label><br/>
+                    <input type="checkbox" id="culture" name="culture"
+                    value="culture"/>
+                        <label for="culture">Découverte - Culturel</label> <br/>
+                    <label>Votre budget:</label>
+                    <input type="range" id="rg" name="budget" min="100" max="5000" value="100" oninput="show_value(this.value)"/>
+                    <label id="budget"></label>
+                    <br/><br/>
+                    <input type="submit" id="sub" value="Envoyez mes informations"/>
+                </fieldset>    
+            </form>
+
+
+        
+            
+    </section>
+   
+    <footer>
+        <a href="https://www.instagram.com/"></a><img src="img/icon/instaIcon.png" height=30 alt="Instagram">
+        <a href="https://www.snapchat.com/"></a><img src="img/icon/snapIcon.png" height=30 alt = "Snapchat">
+        <a href="https://www.facebook.com/"></a><img src="img/icon/facebookIcon.png" height=30 alt = "Facebook">
+        <a href="https://www.twitter.com/"></a><img src="img/icon/twitterIcon.png" height=30 alt = "Twitter">
+
+        <br/>
+
+        <a href="#">Nous contacter</a>
+        <a href="#">Recrutement</a>
+        <a href="#">Mentions légales</a>
+        <p class="copyright">Sweetcase © 2022</p>
+    </footer>
+
+   </body>
+   
+</html>
