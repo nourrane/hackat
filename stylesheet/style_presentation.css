@@ -24,6 +24,16 @@ body {
     
 }
 
+/* Link */
+
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
+}
+
 /* Header + Title */
 
 header {  
@@ -483,11 +493,6 @@ h1#maintitle{
   display: flex;
   justify-content: center;
 }
-
-   
-.card:hover{
-    transform: translateY(-30px);
-}
   
 .text{
     opacity: 0;
@@ -496,6 +501,7 @@ h1#maintitle{
 }
   
 .description{
+    margin-top:10%;
     font-size:11px;
     opacity: 50%;
 }
@@ -504,7 +510,6 @@ h1#maintitle{
     font-size:11px;
     opacity:100%; 
 }
-
 
 .icon{
   position: relative;

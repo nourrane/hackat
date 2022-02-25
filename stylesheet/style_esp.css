@@ -10,6 +10,16 @@ body {
     background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
     
 }
+
+/* Link */
+
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
+}
   
 /* Video */
 .video-wrapper{
@@ -110,7 +120,7 @@ h4{
 aside{
   font-family:'louis_george_cafebold';
   color:azure;
-  font-size:18px;
+  font-size:14px;
   text-shadow: 0px 0px 20px black; 
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
