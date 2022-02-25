@@ -1,5 +1,5 @@
 /*                         
-*   Stylesheet: espagne.html  
+*   Stylesheet: canada.html  
 * 
 */
 
@@ -63,12 +63,14 @@ h1#maintitle{
   }
 }
 
-#valapicture{
-  margin:20px;
+#crcpicture{
+  margin:50px;
   width:30%;
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
   
+
+
 h2{
   color:azure;
   text-shadow: 0px 0px 20px black; 
@@ -120,6 +122,19 @@ aside{
   padding: 1em;
 }
   
+
+h1#canadtitle{
+  text-align: center;
+  font-family: 'louis_george_cafebold';
+  opacity: 4;
+  filter: blur(4px);
+  font-size:35px;
+  margin-right: 40px;
+  font-style: italic;
+  border: 0.3vw solid rgba(255, 255, 255, 0.562);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
 /* Paragraph */
 p{
   color: azure;
@@ -136,22 +151,9 @@ p{
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
   
-#espdescrp{
+#crcdescrp{
   text-align: center;
 }
-
-h1#esptitle{
-  text-align: center;
-  font-family: 'louis_george_cafebold';
-  opacity: 4;
-  filter: blur(4px);
-  font-size:35px;
-  margin-right: 40px;
-  font-style: italic;
-  border: 0.3vw solid rgba(255, 255, 255, 0.562);
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
   
 @keyframes fade-in {
   100% {
@@ -451,7 +453,7 @@ h1#maintitle{
   opacity: 1;
 }  
 
-#valapicture{
+#crcpicture{
   height:70%;
   width:70%;
   margin:60px;
@@ -471,7 +473,7 @@ aside{
 }
 
   
-h1#esptitle{
+h1#canadtitle{
   text-align: center;
   font-family: 'louis_george_cafebold';
   opacity: 4;

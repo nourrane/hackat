@@ -124,6 +124,7 @@ h4{
   margin:60px;
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
+
 /* Paragraph */
 aside{
   font-family:'louis_george_cafebold';
@@ -133,7 +134,7 @@ aside{
   border-radius: 20px;
   background-color: #ffffff41;
   float: right;
-  font-size:14px;
+  font-size:18px;
   margin-right: 40px;
   padding: 1em;
 }
