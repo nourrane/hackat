@@ -1,0 +1,553 @@
+/*                         
+*   Stylesheet: norvege.html  
+* 
+*/
+
+body {
+  margin:0;
+  padding:0;
+  background-color: #11221c;
+  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+  
+}
+
+/* Link */
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
+}
+
+
+/* Video */
+.video-wrapper{
+  padding:0;
+  position: fixed;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+#videocontener{
+  width:90%;
+  object-fit: cover;
+  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Header + Title */
+header {  
+    font-family: 'gin_and_soda_personal_useRg';
+    text-align: center;
+    padding: 2%;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: center;
+    top:0;
+    left:0;
+
+}
+
+h1{
+  font-family: 'louis_george_cafebold';
+  font-size: 3vw;
+  margin-left:40px;
+  color:azure;
+  text-shadow: 0px 0px 20px black; 
+}
+
+h1#maintitle{ 
+  font-family: 'gin_and_soda_personal_useRg';
+  font-size:10vw;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+h1#norvtitle{
+  font-family: 'louis_george_cafebold';
+  opacity: 4;
+  filter: blur(4px);
+  font-size:35px;
+  font-style: italic;
+  border: 0.3vw solid rgba(255, 255, 255, 0.562);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+h2{
+  color:azure;
+  text-shadow: 0px 0px 20px black; 
+  font-family: 'breadley_sansregular';
+  font-size:45px;
+  margin:20px;
+}
+
+.slog{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 30px;
+  line-height: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+h3{
+  font-family: 'breadley_sansregular';
+  color: azure;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 30px;
+  line-height: 28px;
+}
+
+h4{
+  font-family: 'baby_dollregular';
+}
+
+#dest{
+  font-family: 'louis_george_cafebold';
+  color:azure;
+  text-shadow: 0px 0px 20px black; 
+  
+}
+
+#norvpicture{
+  margin:60px;
+  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
+}
+
+/* Paragraph */
+aside{
+  font-family:'louis_george_cafebold';
+  color:azure;
+  text-shadow: 0px 0px 20px black; 
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: #ffffff41;
+  float: right;
+  font-size:14px;
+  margin-right: 40px;
+  padding: 1em;
+}
+
+p{
+  color: azure;
+  font-family: 'louis_george_cafebold';
+  padding-bottom: 1rem;
+  margin:60px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* Logo */
+.logo{
+  opacity: 0;
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+}
+
+#norvdescrp{
+  text-align: center;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* List */
+li {
+  font-family: 'louis_george_cafebold';
+  display: inline-block; 
+  opacity: 80%;
+  padding: 2px;
+  background-color: #dddddd;
+  box-sizing : border-box;
+  line-height: 24px;
+  position: static;
+  z-index:auto;
+}
+
+#left{
+  float: left;
+  
+}
+
+#right{
+  float: right
+}
+
+.tabsites{
+  margin: 60px;
+  border-collapse:collapse;
+}
+
+mark{
+  background-color: #ffffffce;
+  border-radius: 10%;
+}
+
+th, td{
+  font-family: 'louis_george_cafebold';
+  color:azure;
+  font-size: 20px;
+  text-shadow: 0px 0px 20px black;
+  border: 1px solid white;
+  text-align: center;
+}
+
+
+
+th:hover, td:hover{
+  background-color: #dddddd56;
+}
+
+/* Flex-box CSS */
+
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size:10px;
+  color:black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.volet {
+  flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
+  opacity: 0;
+  filter: drop-shadow(4px);
+  box-shadow: 0 0 30px #424242;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.473);
+  transition: all 0.5s ease-in-out;
+  animation: fade 2s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+    filter: drop-shadow(4px);
+  }
+}
+
+.volet:hover{
+    flex-basis: 30%;
+}
+
+.advice{
+  font-family: 'baby_dollregular';;
+}
+
+.name {
+  font-size: 1.2vw;
+  opacity: 1;
+}
+
+.details li {
+  line-height: 2vw;
+  
+}
+
+
+/* ------ Volets ------ */
+#volet1 {
+    background: #f4f4f48d; 
+  
+}
+
+#volet2 {
+    background: #f4f4f48d; 
+    
+}
+
+#volet3 {
+  background: #f4f4f48d; 
+}
+
+#volet4 {
+  background: #f4f4f48d;
+}
+/* -------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+.fig{
+  text-align: center;
+}
+figure.snip{
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background:transparent;
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+figure.snip img{
+  max-width: 100%;
+  opacity: 0.4;
+}
+
+figure.snip figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+figure.snip h2 {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  display: inline-block;
+  background: transparent;
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+  padding: 12px 5px;
+  margin: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.snip h2 span {
+  font-weight: 800;
+}
+
+figure.snip:before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(110deg) translateY(-50%);
+  transform: rotate(110deg) translateY(-50%);
+}
+
+
+figure.snip:hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.snip:hover h2{
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%) opacity(100%);
+}
+
+figure.snip:hover:before{
+  -webkit-transform: rotate(110deg) translateY(-150%);
+  transform: rotate(110deg) translateY(-150%);
+}
+
+/* ------ Footer ------ */
+footer {
+  font-family: 'breadley_sansregular';
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+  border-top: 1px solid var(--border);
+}
+/* -------------------- */
+
+/* ------ Font ------ */
+@font-face {
+  font-family: 'gin_and_soda_personal_useRg';
+  src: url('../font/font_title/gin_and_soda_personal_use-webfont.woff2') format('woff2'),
+       url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'simple_tfbregular';
+  src: url('../font/font_simple/simple_tfb-webfont.woff2') format('woff2'),
+       url('../font/font_simple/simple_tfb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'simpleton_gothicregular';
+  src: url('../font/font_simpleton/simpleton-gothic-webfont.woff2') format('woff2'),
+       url('../font/simpleton-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'baby_dollregular';
+  src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
+       url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'kg_red_handsregular';
+  src: url('../font/font_babydoll_redhands/kgredhands-webfont.woff2') format('woff2'),
+       url('../font/font_babydoll_redhands/kgredhands-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* -------------------- */
+ 
+
+/* Media Queries */
+
+@media screen and (max-width:900px){
+
+h1{
+  font-family: 'louis_george_cafebold';
+  font-size: 20px;
+  margin-left: 40px;
+  color:azure;
+  text-shadow: 0px 0px 20px black; 
+}
+    
+h1#maintitle{ 
+  font-size: 20vw;
+  margin-left: 2%;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size:5px;
+  color:black;
+  display: flex;
+  justify-content: center;
+ }
+
+  
+.name {
+  font-size: 4vw;
+  opacity: 1;
+}
+
+#norvpicture{
+  height:70%;
+  width:70%;
+  margin:60px;
+  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
+}
+
+aside{
+  font-family:'louis_george_cafebold';
+  color:azure;
+  text-align: center;
+  text-shadow: 0px 0px 20px black; 
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: #ffffff41;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+  
+h1#norvtitle{
+  text-align: center;
+  font-family: 'louis_george_cafebold';
+  opacity: 4;
+  filter: blur(4px);
+  font-size:35px;
+  margin-right: 40px;
+  font-style: italic;
+  border: 0.3vw solid rgba(255, 255, 255, 0.562);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+
+p{
+  font-family: 'louis_george_cafebold';
+  justify-content: center;
+  font-size: 25;
+}
+
+table thead {
+  display: none;
+}
+    
+.table tr{
+  display: block;
+  margin-bottom: 40px;
+}
+    
+.table td {
+  display: block;
+  text-align: right;
+}
+    
+.table td:before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+}
+
+}

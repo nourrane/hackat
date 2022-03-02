@@ -1,0 +1,526 @@
+/*                         
+*   Stylesheet: presentation.html  
+* 
+*/
+
+
+/* Video */
+
+.video-wrapper{
+    opacity:25%;
+    padding:0;
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background-color: #11221c;
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    
+}
+
+/* Link */
+
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
+}
+
+/* Header + Title */
+
+header {  
+    text-align: center;
+    padding: 5%;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: center;
+}
+
+h1#maintitle{ 
+    font-family: 'gin_and_soda_personal_useRg';
+    color: azure;
+    text-shadow: 0px 0px 20px black;   
+    font-size: 10vw;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1{
+    color: azure;
+    text-shadow: 0px 0px 20px black; 
+    font-family: 'breadley_sansregular';
+    font-size:45px;
+    margin:20px;
+}
+
+h2{
+    color:azure;
+    text-shadow: 0px 0px 20px black; 
+    font-family: 'breadley_sansregular';
+    font-size:45px;
+    margin:20px;
+}
+
+
+/* Container */
+
+.container{
+    background-color: rgba(240, 248, 255, 0.158);
+    display:flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Card */
+
+.card{
+    position: relative;
+    opacity: 0;
+    width: 400px;
+    height: 400px;
+    margin:30px;
+    border-radius: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 15px 0 #fff,
+    inset 0 -10px 0 rgba( 255, 255, 255, 0.25),
+    0 45px 0 rgba(0, 0, 0, 0.15);
+    filter: blur(5px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    transition: transform 0.8s;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+.card:hover{
+    transform: translateY(-30px);
+}
+
+.text{
+    opacity: 0;
+    margin: 0px;
+    justify-content: end;
+    padding: 15px;
+}
+
+.description{
+    opacity: 50%;
+    padding: 15px;
+}
+
+.description:hover{
+    opacity:100%; 
+}
+
+.text:hover{
+    animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    transition: transform 0.8s;
+}
+
+.icon{
+    position: relative;
+    border-radius: 30px;
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff4b;
+
+    box-shadow: 0 10px 0 rgba(255, 255, 255, 0.685),
+    inset 0 -9px 0 rgba( 255, 255, 255, 0.25);
+    z-index: 10000;
+    
+}
+
+.norv{
+    background-image: url(../img/pays/Skudeneshavn.jpg);
+}
+
+.val{
+    background-image: url(../img/pays/Valladolid.jpg);
+}
+
+.carcross{
+    background-image: url(../img/pays/Carcross.jpg);
+}
+
+/* Flex-box CSS */
+
+.color-list {
+    padding:50px;
+    font-family: 'breadley_sansregular';
+    font-size:10px;
+    color:black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.volet {
+    flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
+    box-shadow: 0 0 30px #424242;
+    padding: 1em;
+    color: rgba(0, 0, 0, 0.473);
+    transition: all 0.5s ease-in-out;
+}
+  
+.volet:hover{
+      flex-basis: 30%;
+}
+
+/* Paragraph */
+
+p{  
+
+    font-family: 'louis_george_cafebold';
+    margin:25px;
+    color:azure;
+}
+
+/* Logo */
+
+.logo{
+    opacity: 0;
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+  
+.name {
+    font-size: 1.2vw;
+    opacity: 1;
+}
+
+/* ------ Volets ------ */
+#volet1 {
+    background: #f4f4f48d; 
+  
+}
+
+#volet2 {
+    background: #f4f4f48d;   
+}
+
+#volet3 {
+  background: #f4f4f48d; 
+}
+
+#volet4 {
+  background: #f4f4f48d;
+}
+/* -------------------- */
+
+/* List */
+
+ul{
+    font-family: 'louis_george_cafebold';
+    list-style-type:unset;
+    color:azure;
+}
+
+ul li::before{
+    margin-right:5px;
+    color:#baa2eb
+}
+
+/* ------ Font ------ */
+@font-face {
+  font-family: 'gin_and_soda_personal_useRg';
+  src: url('../font/font_title/gin_and_soda_personal_use-webfont.woff2') format('woff2'),
+       url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+@font-face {
+  font-family: 'simple_tfbregular';
+  src: url('../font/font_simple/simple_tfb-webfont.woff2') format('woff2'),
+       url('../font/font_simple/simple_tfb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'simpleton_gothicregular';
+  src: url('../font/font_simpleton/simpleton-gothic-webfont.woff2') format('woff2'),
+       url('../font/simpleton-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'baby_dollregular';
+  src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
+       url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'kg_red_handsregular';
+  src: url('../font/font_babydoll_redhands/kgredhands-webfont.woff2') format('woff2'),
+       url('../font/font_babydoll_redhands/kgredhands-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* -------------------- */
+
+/* ------ Footer ------ */
+body > footer {
+    font-family: 'breadley_sansregular';
+    margin-top: 4rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+    color: var(--text-light);
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+  /* -------------------- */
+
+/* Media Queries */
+
+@media screen and (max-width:900px){
+
+h1#maintitle{ 
+  font-family: 'gin_and_soda_personal_useRg'; 
+  color: azure;
+  text-shadow: 0px 0px 20px black;   
+  font-size:20vw;
+  margin-left:2%;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.name {
+  font-size: 4vw;
+  opacity: 1;
+}  
+
+  
+.container { 
+  background-color: #ffffff4f;
+  animation: gradient 15s ease infinite;
+  overflow: scroll;
+  border-radius: 10px;
+  margin: 20vw;
+  padding: 15vw;
+  border: 3px solid #ffffff; 
+  transition: transform 0.8s;
+}
+  
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size:5px;
+  color:black;
+  display: flex;
+  justify-content: center;
+}
+    
+p{
+  font-family: 'louis_george_cafebold';
+  justify-content: center;
+  font-size: 25px;
+}
+
+}
+
+
+@media (min-width:820px) and (max-width:1500px){
+  
+h1#maintitle{ 
+  font-size:20vw;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.card{
+  position: relative;
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  margin: 8px;
+  border-radius: 30px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 15px 0 #fff,
+  inset 0 -8px 0 rgba( 255, 255, 255, 0.25),
+  0 25px 0 rgba(0, 0, 0, 0.15);
+  filter: blur(5px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  transition: transform 0.8s;
+}
+    
+.text{
+    opacity: 0;
+    margin-top: 20%;
+    font-size:5px;
+    justify-content: end;
+}
+
+.name {
+  font-size: 4vw;
+  opacity: 1;
+}  
+    
+.description{
+    font-size:15px;
+    opacity: 50%;
+}
+    
+.description:hover{
+    font-size:15px;
+    opacity:100%; 
+}
+
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size:5px;
+  color:black;
+  display: flex;
+  justify-content: center;
+}
+
+
+   
+.icon{
+  position: relative;
+  border-radius: 30px;
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff4b;  
+  box-shadow: 0 10px 0 rgba(255, 255, 255, 0.685),
+  inset 0 -9px 0 rgba( 255, 255, 255, 0.25);
+  z-index: 10000;
+}
+
+}
+
+@media (max-width:800px) and (max-height:1000px){
+
+.card{
+  position: relative;
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  margin: 8px;
+  border-radius: 30px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 15px 0 #fff,
+  inset 0 -8px 0 rgba( 255, 255, 255, 0.25),
+  0 25px 0 rgba(0, 0, 0, 0.15);
+  filter: blur(5px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  transition: transform 0.8s;
+}
+  
+.name {
+  font-size: 4vw;
+  opacity: 1;
+}  
+
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size:5px;
+  color:black;
+  display: flex;
+  justify-content: center;
+}
+  
+.text{
+    opacity: 0;
+    font-size:2px;
+    justify-content: end;
+}
+  
+.description{
+    margin-top:10%;
+    font-size:11px;
+    opacity: 50%;
+}
+  
+.description:hover{
+    font-size:11px;
+    opacity:100%; 
+}
+
+.icon{
+  position: relative;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff4b;  
+  box-shadow: 0 10px 0 rgba(255, 255, 255, 0.685),
+  inset 0 -9px 0 rgba( 255, 255, 255, 0.25);
+  z-index: 10000;
+      
+}
+}
+    
