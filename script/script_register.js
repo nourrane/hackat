@@ -92,12 +92,11 @@ form.addEventListener("submit", function (event) {
     let userValid = validateUsername(form.elements["username"], USR_REQUIRED, PSW_LENGTH_REQUIRED);
     let pswValid = hasValue(form.elements["userpwd"], PSW_REQUIRED);
 	// if valid, submit the form.
-	if (nameValid && emailValid) {
-		alert("Entrez vos informations.");
+	if (nameValid && emailValid && fnameValid && DOBValid && userValid && pswValid) {
+		document.forms["formular"].submit();
 	}
 });
 
-function show_value(x)
-            {
-             document.getElementById('budget').innerHTML=x + "€";
-            }
+function show_value(x){
+    document.getElementById('budget').innerHTML = x + "€";
+}
