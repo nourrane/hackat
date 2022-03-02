@@ -221,7 +221,7 @@ th:hover, td:hover{
 @keyframes fade {
   100% {
     opacity: 1;
-    filter: drop-shadow(4);
+    filter: drop-shadow(4px);
   }
 }
   

@@ -102,7 +102,7 @@ h2{
     box-shadow: 0 15px 0 #fff,
     inset 0 -10px 0 rgba( 255, 255, 255, 0.25),
     0 45px 0 rgba(0, 0, 0, 0.15);
-    filter: blur(5);
+    filter: blur(5px);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
     display: flex;
     justify-content: center;
@@ -378,7 +378,7 @@ h1#maintitle{
 p{
   font-family: 'louis_george_cafebold';
   justify-content: center;
-  font-size: 25;
+  font-size: 25px;
 }
 
 }
@@ -404,7 +404,7 @@ h1#maintitle{
   box-shadow: 0 15px 0 #fff,
   inset 0 -8px 0 rgba( 255, 255, 255, 0.25),
   0 25px 0 rgba(0, 0, 0, 0.15);
-  filter: blur(5);
+  filter: blur(5px);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
   display: flex;
   justify-content: center;
@@ -472,7 +472,7 @@ h1#maintitle{
   box-shadow: 0 15px 0 #fff,
   inset 0 -8px 0 rgba( 255, 255, 255, 0.25),
   0 25px 0 rgba(0, 0, 0, 0.15);
-  filter: blur(5);
+  filter: blur(5px);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
   display: flex;
   justify-content: center;

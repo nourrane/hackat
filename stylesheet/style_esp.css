@@ -87,7 +87,7 @@ h2{
   margin:20px;
 }
   
-h2#slog{
+.slog{
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 1rem;
@@ -228,7 +228,7 @@ th:hover, td:hover{
 @keyframes fade {
   100% {
     opacity: 1;
-    filter: drop-shadow(4);
+    filter: drop-shadow(4px);
   }
 }
   

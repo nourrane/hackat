@@ -100,7 +100,7 @@ h2{
   margin:20px;
 }
 
-h2#slog{
+.slog{
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 1rem;
@@ -187,8 +187,6 @@ li {
   line-height: 24px;
   position: static;
   z-index:auto;
-  background: linear-gradient(circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 50%);
-  
 }
 
 #left{
@@ -251,7 +249,7 @@ th:hover, td:hover{
 @keyframes fade {
   100% {
     opacity: 1;
-    filter: drop-shadow(4);
+    filter: drop-shadow(4px);
   }
 }
 
