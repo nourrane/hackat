@@ -239,6 +239,15 @@ th:hover, td:hover{
 }
   
   
+/* Link */
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
+}
+
 /* ------ Volets ------ */
 #volet1 {
   background: #f4f4f48d; 
