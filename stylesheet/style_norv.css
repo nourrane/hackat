@@ -131,7 +131,8 @@ h4{
 }
 
 #norvpicture{
-  margin:60px;
+  margin-left:50px;
+  width:20em;
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
 
@@ -139,13 +140,13 @@ h4{
 aside{
   font-family:'louis_george_cafebold';
   color:azure;
+  font-size:22px;
   text-shadow: 0px 0px 20px black; 
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
   background-color: #ffffff41;
   float: right;
-  font-size:14px;
-  margin-right: 40px;
+  margin: 5%;
   padding: 1em;
 }
 
@@ -154,7 +155,7 @@ p{
   font-family: 'louis_george_cafebold';
   padding-bottom: 1rem;
   margin:60px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
 }
 
@@ -198,17 +199,19 @@ li {
   float: right
 }
 
-.tabsites{
-  margin: 60px;
-  border-collapse:collapse;
-}
 
 mark{
   background-color: #ffffffce;
   border-radius: 10%;
 }
+.tabsites{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
 th, td{
+  padding: 8px; 
   font-family: 'louis_george_cafebold';
   color:azure;
   font-size: 20px;
@@ -216,13 +219,10 @@ th, td{
   border: 1px solid white;
   text-align: center;
 }
-
-
-
+  
 th:hover, td:hover{
   background-color: #dddddd56;
 }
-
 /* Flex-box CSS */
 
 .color-list {
@@ -232,6 +232,7 @@ th:hover, td:hover{
   display: flex;
   text-align: center;
   justify-content: center;
+  flex-wrap:wrap;
 }
 
 
@@ -490,26 +491,11 @@ h1#maintitle{
   font-size: 4vw;
   opacity: 1;
 }
-
-#norvpicture{
-  height:70%;
-  width:70%;
-  margin:60px;
-  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
-}
-
-aside{
-  font-family:'louis_george_cafebold';
-  color:azure;
-  text-align: center;
-  text-shadow: 0px 0px 20px black; 
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  background-color: #ffffff41;
-  margin-left: 50px;
-  margin-bottom: 60px;
-}
-
+.conteneur{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap
+}  
   
 h1#norvtitle{
   text-align: center;

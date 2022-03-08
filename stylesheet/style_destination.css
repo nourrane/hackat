@@ -197,6 +197,7 @@ form{
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .volet {
