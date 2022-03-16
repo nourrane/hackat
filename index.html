@@ -10,7 +10,7 @@
         <title> Sweetcase </title>
     </head>
 
-   <body>
+   <body> 
     <div class="background">
         <div class=" video-wrapper">
             <video id="videoBG" autoplay muted loop>
@@ -27,6 +27,7 @@
         <h1 id = "principal"> Sweetcase </h1>
         <h1 id = "slogan"> Collectez le moment </h1>
     </header>
+
         <nav>
             <div class="color-list">
                 <section class="volet" id="volet1">
@@ -43,15 +44,46 @@
                 </section>
             </div>
         </nav>
-        <p id="wel"> Découvrez de nouvelles expériences de vie.
-            <br/>
-            Sweetcase vous propose de découvrir des destinations unique tout en vous livrant des conseils
-            pour un voyage écologique et culturel réussi.
-            <br/>
-            Nos équipes locales vous feront découvrir des lieux insolites ainsi que des paysages à couper le souffle.
-         </p>
 
+        <section>
+            <p id="wel"> Découvrez de nouvelles expériences de vie.
+                <br/>
+                Sweetcase vous propose de découvrir des destinations unique tout en vous livrant des conseils
+                pour un voyage écologique et culturel réussi.
+                <br/>
+                Nos équipes locales vous feront découvrir des lieux insolites ainsi que des paysages à couper le souffle.
+            </p>
 
+            <p id="wel">
+                Pour exalter la magie de la découverte du monde,
+                nous avons à coeur de donner du sens à nos voyages. <br/>
+                Plus que visiter un pays, cette sélection d'échappées teintées de vert, <br/>
+                encore plus engagées, vous invite à le vivre en conscience, ancrées dans une démarche <br/>
+                sociale et éco-responsable. <br/>  </p>
+        </section>
+
+         <div class="container_login">
+            <form  id="login" name="login">
+                <h1 id = "log_title"> Se connecter </h1>
+                <div class="field">
+                    <label> Nom d'utilisateur: </label>
+                    <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur"/>
+                    <small></small>
+                </div>
+                <div class="field">                  
+                    <label> Mot de passe: </label>
+                    <input type="password" id="userpwd" name="userpwd" required minlength="8" required placeholder="Entrez votre mot de passe "/><br/><br/>
+                    <small></small>
+                </div>
+                <div class="field">
+                    <button type="submit" class="full">Connexion</button>
+                </div>
+            </form>
+        </div>
+
+        <section>
+
+        </section>
 
     <section >
         <article class="container left" >
@@ -151,6 +183,7 @@
         <a href="#">Mentions légales</a>
         <p class="copyright">Sweetcase © 2022</p>
     </footer>
-
    </body>
+
+   <script src="script/script_login.js"></script>   
 </html>

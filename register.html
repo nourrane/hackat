@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="stylesheet/style_register.css" />
         <title> Sweetcase </title>
     </head>
+    
    <body>
-
     <div class="background">
         <div class=" video-wrapper">
             <video id="videoBG" autoplay muted loop>
@@ -69,40 +69,40 @@
             </article>
             
             <div class="container_register">
-                <form action="signup.html" method="post" id="signup" name = "formular">
+                <form id="signup" name="signup">
                     <h1>S'inscrire</h1>
                     <div class="field">
-                        <label for="name">Nom: </label>
+                        <label> * Nom: </label>
                         <input type="text" id="firstname" name="firstname" placeholder="Entrez votre nom"/>
                         <small></small>
                     </div>
                     <div class="field">
-                        <label for="name">Prénom: </label>
+                        <label> * Prénom: </label>
                         <input type="text" id="lastname" name="lastname" placeholder="Entrez votre prénom"/>
                         <small></small>
                     </div>
                     <div class="field">
-                        <label for="name">Date de naissance: </label>
+                        <label> Date de naissance: </label>
                         <input type="text" id="birthdate" name="birthdate" placeholder="jj/mm/aaaa"/>
                         <small></small>
                     </div>
                     <div class="field">
-                        <label for="name">Nom d'utilisateur: </label>
+                        <label> * Nom d'utilisateur: </label>
                         <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur"/>
                         <small></small>
                     </div>
                     <div class="field">                  
-                        <label for="name" > <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">Mot de passe: <i class="fa fa-eye" id="eye"></i></label>
-                        <input type="password"  id="password" class="masked" name="password" required minlength="8" required placeholder="Entrez votre mot de passe "/><br/><br/>
+                        <label> * Mot de passe: </label>
+                        <input type="password" id="userpwd" name="userpwd" required minlength="8" required placeholder="Entrez votre mot de passe "/><br/>
                         <small></small>
                     </div>
                     <div class="field">
-                        <label for="text">Adresse mail:</label>
+                        <label> * Adresse mail:</label>
                         <input type="text" id="useremail" name="useremail" placeholder="Entrez votre addresse mail"/>
                         <small></small>
                     </div>
                     <div class="field">
-                        <button type="submit" class="full">Subscribe</button>
+                        <button type="submit" class="full">Envoyer</button>
                     </div>
                 </form>
             </div>
@@ -139,7 +139,6 @@
         <a href="#">Mentions légales</a>
         <p class="copyright">Sweetcase © 2022</p>
     </footer>
-
     <script src="script/script_register.js"></script>     
    </body>
    
