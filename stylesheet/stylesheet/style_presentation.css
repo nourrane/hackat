@@ -7,18 +7,21 @@
 /* Video */
 
 .video-wrapper{
-  opacity:25%;
-  padding:0;
-  position: fixed;
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+    opacity:25%;
+    padding:0;
+    position: fixed;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 body {
-  background-color: #11221c;
-  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );    
+    margin:0;
+    padding: 0;
+    background-color: #11221c;
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    
 }
 
 /* Link */
@@ -176,6 +179,7 @@ h2{
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .volet {
@@ -259,35 +263,66 @@ ul li::before{
        url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-    
-}
   
+}
+
+@font-face {
+  font-family: 'simple_tfbregular';
+  src: url('../font/font_simple/simple_tfb-webfont.woff2') format('woff2'),
+       url('../font/font_simple/simple_tfb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'simpleton_gothicregular';
+  src: url('../font/font_simpleton/simpleton-gothic-webfont.woff2') format('woff2'),
+       url('../font/simpleton-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 @font-face {
   font-family: 'baby_dollregular';
   src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
-         url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+       url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  
+
 }
-  
+
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'kg_red_handsregular';
+  src: url('../font/font_babydoll_redhands/kgredhands-webfont.woff2') format('woff2'),
+       url('../font/font_babydoll_redhands/kgredhands-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
-  
-  
+
+
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
+
+@font-face {
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /* -------------------- */
 
 /* ------ Footer ------ */
@@ -321,6 +356,18 @@ h1#maintitle{
   opacity: 1;
 }  
 
+  
+.container { 
+  background-color: #ffffff4f;
+  animation: gradient 15s ease infinite;
+  overflow: scroll;
+  border-radius: 10px;
+  margin: 20vw;
+  padding: 15vw;
+  border: 3px solid #ffffff; 
+  transition: transform 0.8s;
+}
+  
 .color-list {
   font-family: 'breadley_sansregular';
   font-size:5px;
@@ -332,7 +379,7 @@ h1#maintitle{
 p{
   font-family: 'louis_george_cafebold';
   justify-content: center;
-  font-size: 13px;
+  font-size: 25px;
 }
 
 }
@@ -346,18 +393,12 @@ h1#maintitle{
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
-.container { 
-  background-color: #ffffff4f;
-  animation: gradient 15s ease infinite;
-  overflow: scroll;
-  border-radius: 10px;
-  padding: 15vw;
-  border: 3px solid #ffffff; 
-}
-
 .card{
   position: relative;
   opacity: 0;
+  width: 400px;
+  height: 400px;
+  margin: 8px;
   border-radius: 30px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -369,6 +410,8 @@ h1#maintitle{
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  transition: transform 0.8s;
 }
     
 .text{
@@ -384,8 +427,13 @@ h1#maintitle{
 }  
     
 .description{
-    font-size:20px;
+    font-size:15px;
     opacity: 50%;
+}
+    
+.description:hover{
+    font-size:15px;
+    opacity:100%; 
 }
 
 .color-list {
@@ -396,6 +444,8 @@ h1#maintitle{
   justify-content: center;
 }
 
+
+   
 .icon{
   position: relative;
   border-radius: 30px;
@@ -414,6 +464,8 @@ h1#maintitle{
 .card{
   position: relative;
   opacity: 0;
+  width: 400px;
+  height: 400px;
   margin: 8px;
   border-radius: 30px;
   border-bottom-left-radius: 50px;
@@ -430,16 +482,6 @@ h1#maintitle{
   transition: transform 0.8s;
 }
   
-.container { 
-  background-color: #ffffff4f;
-  animation: gradient 15s ease infinite;
-  overflow: scroll;
-  border-radius: 10px;
-  padding: 15vw;
-  border: 3px solid #ffffff; 
-  transition: transform 0.8s;
-}
-
 .name {
   font-size: 4vw;
   opacity: 1;
@@ -454,9 +496,9 @@ h1#maintitle{
 }
   
 .text{
-  opacity: 0;
-  font-size:2px;
-  justify-content: end;
+    opacity: 0;
+    font-size:2px;
+    justify-content: end;
 }
   
 .description{
@@ -464,14 +506,22 @@ h1#maintitle{
     font-size:11px;
     opacity: 50%;
 }
+  
+.description:hover{
+    font-size:11px;
+    opacity:100%; 
+}
 
 .icon{
   position: relative;
   border-radius: 30px;
+  width: 200px;
+  height: 200px;
   background-color: #ffffff4b;  
   box-shadow: 0 10px 0 rgba(255, 255, 255, 0.685),
   inset 0 -9px 0 rgba( 255, 255, 255, 0.25);
-  z-index: 10000; 
+  z-index: 10000;
+      
 }
 }
     

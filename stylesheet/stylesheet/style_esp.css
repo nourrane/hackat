@@ -1,11 +1,24 @@
 /*                         
-*   Stylesheet: canada.html  
+*   Stylesheet: espagne.html  
 * 
 */
 
 body {
-  background-color: #11221c;
-  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );   
+    margin:0;
+    padding:0;
+    background-color: #11221c;
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    
+}
+
+/* Link */
+
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
 }
   
 /* Video */
@@ -17,7 +30,6 @@ body {
   min-height: 100%;
   object-fit: cover;
 }
-
   
 #videocontener{
   width:90%;
@@ -61,15 +73,8 @@ h1#maintitle{
   }
 }
 
-#crcpicture{
-  margin-left:80px;
-  width:22%;
-  height:22%;
-  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
-}
+
   
-
-
 h2{
   color:azure;
   text-shadow: 0px 0px 20px black; 
@@ -77,8 +82,8 @@ h2{
   font-size:45px;
   margin:20px;
 }
-  
-h2#slog{
+
+.slog{
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 1rem;
@@ -107,11 +112,20 @@ h4{
   text-shadow: 0px 0px 20px black; 
 }
 
-/* Aside */
+.conteneur{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap
+}  
+#valapicture{
+  margin-left:50px;
+  width:20em;
+  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
+}
 aside{
   font-family:'louis_george_cafebold';
   color:azure;
-  font-size:17px;
+  font-size:21px;
   text-shadow: 0px 0px 20px black; 
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
@@ -121,9 +135,27 @@ aside{
   padding: 1em;
 }
 
+/* Paragraph */
+p{
+  color: azure;
+  font-family: 'louis_george_cafebold';
+  padding-bottom: 1rem;
+  margin:60px;
+  font-size: 20px;
+  line-height: 28px;
+}
   
+  /* Logo */
+.logo{
+  opacity: 0;
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  
+#espdescrp{
+  text-align: center;
+}
 
-h1#canadtitle{
+h1#esptitle{
   text-align: center;
   font-family: 'louis_george_cafebold';
   opacity: 4;
@@ -135,25 +167,6 @@ h1#canadtitle{
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
-/* Paragraph */
-p{
-  color: azure;
-  font-family: 'louis_george_cafebold';
-  padding-bottom: 1rem;
-  margin:60px;
-  font-size: 18px;
-  line-height: 28px;
-}
-  
-  /* Logo */
-.logo{
-  opacity: 0;
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-  
-#crcdescrp{
-  text-align: center;
-}
   
 @keyframes fade-in {
   100% {
@@ -170,18 +183,19 @@ p{
   float: right
 }
   
-.tabsites{
-  margin: auto;
-  border-collapse:collapse;
-}
   
 mark{
-  background-color: transparent;
-  color:goldenrod;
+  background-color: #ffffffce;
   border-radius: 10%;
 }
-  
+.tabsites{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
 th, td{
+  padding: 8px; 
   font-family: 'louis_george_cafebold';
   color:azure;
   font-size: 20px;
@@ -190,12 +204,9 @@ th, td{
   text-align: center;
 }
   
-  
-  
 th:hover, td:hover{
   background-color: #dddddd56;
 }
-  
 /* Flex-box CSS */
   
 .color-list {
@@ -205,6 +216,7 @@ th:hover, td:hover{
   display: flex;
   text-align: center;
   justify-content: center;
+  flex-wrap:wrap
 }
    
 .volet {
@@ -239,15 +251,6 @@ th:hover, td:hover{
 }
   
   
-/* Link */
-a{
-  color:azure;
-}
-
-a:visited{
-  color:rgba(240, 255, 255, 0.692);
-}
-
 /* ------ Volets ------ */
 #volet1 {
   background: #f4f4f48d; 
@@ -365,40 +368,67 @@ footer {
 /* -------------------- */
   
  /* ------ Font ------ */
- 
 @font-face {
   font-family: 'gin_and_soda_personal_useRg';
   src: url('../font/font_title/gin_and_soda_personal_use-webfont.woff2') format('woff2'),
-       url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
+         url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-    
 }
+  
+@font-face {
+  font-family: 'simple_tfbregular';
+  src: url('../font/font_simple/simple_tfb-webfont.woff2') format('woff2'),
+         url('../font/font_simple/simple_tfb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+  
+@font-face {
+  font-family: 'simpleton_gothicregular';
+  src: url('../font/font_simpleton/simpleton-gothic-webfont.woff2') format('woff2'),
+        url('../font/simpleton-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  
   
 @font-face {
   font-family: 'baby_dollregular';
   src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
-         url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+       url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   
 }
   
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'kg_red_handsregular';
+  src: url('../font/font_babydoll_redhands/kgredhands-webfont.woff2') format('woff2'),
+      url('../font/font_babydoll_redhands/kgredhands-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+  
+  
+  @font-face {
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
 }
   
   
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+        url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 /* -------------------- */
    
@@ -436,19 +466,20 @@ h1#maintitle{
   opacity: 1;
 }  
 
-#crcpicture{
-  height:70%;
-  width:70%;
-  margin:60px;
-  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
-}
-
 aside{
-  display: none;
+  font-family:'louis_george_cafebold';
+  color:azure;
+  text-align: center;
+  text-shadow: 0px 0px 20px black; 
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: #ffffff41;
+  margin-left: 50px;
+  margin-bottom: 60px;
 }
 
   
-h1#canadtitle{
+h1#esptitle{
   text-align: center;
   font-family: 'louis_george_cafebold';
   opacity: 4;

@@ -4,8 +4,11 @@
 */
 
 body {
-  background-color: #11221c;
-  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );   
+    margin:0;
+    padding:0;
+    background-color: #11221c;
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    
 }
   
 /* Video */
@@ -62,9 +65,8 @@ h1#maintitle{
 }
 
 #crcpicture{
-  margin-left:80px;
-  width:22%;
-  height:22%;
+  margin-left:50px;
+  width:25em;
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
   
@@ -106,12 +108,13 @@ h4{
   color:azure;
   text-shadow: 0px 0px 20px black; 
 }
+  
 
-/* Aside */
+
 aside{
   font-family:'louis_george_cafebold';
   color:azure;
-  font-size:17px;
+  font-size:21px;
   text-shadow: 0px 0px 20px black; 
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
@@ -121,7 +124,6 @@ aside{
   padding: 1em;
 }
 
-  
 
 h1#canadtitle{
   text-align: center;
@@ -141,7 +143,7 @@ p{
   font-family: 'louis_george_cafebold';
   padding-bottom: 1rem;
   margin:60px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
 }
   
@@ -170,18 +172,19 @@ p{
   float: right
 }
   
-.tabsites{
-  margin: auto;
-  border-collapse:collapse;
-}
-  
+
 mark{
-  background-color: transparent;
-  color:goldenrod;
+  background-color: #ffffffce;
   border-radius: 10%;
 }
-  
+.tabsites{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
 th, td{
+  padding: 8px; 
   font-family: 'louis_george_cafebold';
   color:azure;
   font-size: 20px;
@@ -189,8 +192,6 @@ th, td{
   border: 1px solid white;
   text-align: center;
 }
-  
-  
   
 th:hover, td:hover{
   background-color: #dddddd56;
@@ -205,6 +206,7 @@ th:hover, td:hover{
   display: flex;
   text-align: center;
   justify-content: center;
+  flex-wrap:wrap;
 }
    
 .volet {
@@ -365,40 +367,67 @@ footer {
 /* -------------------- */
   
  /* ------ Font ------ */
- 
 @font-face {
   font-family: 'gin_and_soda_personal_useRg';
   src: url('../font/font_title/gin_and_soda_personal_use-webfont.woff2') format('woff2'),
-       url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
+         url('../font/font_title/gin_and_soda_personal_use-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-    
 }
+  
+@font-face {
+  font-family: 'simple_tfbregular';
+  src: url('../font/font_simple/simple_tfb-webfont.woff2') format('woff2'),
+         url('../font/font_simple/simple_tfb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+  
+@font-face {
+  font-family: 'simpleton_gothicregular';
+  src: url('../font/font_simpleton/simpleton-gothic-webfont.woff2') format('woff2'),
+        url('../font/simpleton-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  
   
 @font-face {
   font-family: 'baby_dollregular';
   src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
-         url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+       url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   
 }
   
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'kg_red_handsregular';
+  src: url('../font/font_babydoll_redhands/kgredhands-webfont.woff2') format('woff2'),
+      url('../font/font_babydoll_redhands/kgredhands-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+  
+  
+  @font-face {
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
 }
   
   
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+        url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 /* -------------------- */
    
@@ -435,17 +464,12 @@ h1#maintitle{
   font-size: 4vw;
   opacity: 1;
 }  
+.conteneur{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap
+}  
 
-#crcpicture{
-  height:70%;
-  width:70%;
-  margin:60px;
-  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
-}
-
-aside{
-  display: none;
-}
 
   
 h1#canadtitle{
