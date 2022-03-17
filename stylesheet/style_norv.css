@@ -129,23 +129,22 @@ h4{
 
 #norvpicture{
   margin-left:80px;
-  width:22%;
-  height:22%;
+  width:30%;
+  height:30%;
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
 
-/* Aside */
-aside{
+aside {
   font-family:'louis_george_cafebold';
   color:azure;
-  font-size:17px;
-  text-shadow: 0px 0px 20px black; 
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  background-color: #ffffff41;
+  font-size:19px;
+  width: 40%;
   float: right;
-  margin: auto;
-  padding: 1em;
+  margin-right:5%;
+  padding: 2%;
+  color: #ffffff;
+  border: 3px solid rgba(255, 255, 255, 0.247);
+  background-color: #10382267;
 }
 
 /* Paragraph */
@@ -156,6 +155,11 @@ p{
   margin:60px;
   font-size: 18px;
   line-height: 28px;
+}
+
+section p{
+  background-color: #f5f5f50c;
+  border: 1px solid rgba(255, 255, 255, 0.247);
 }
 
 /* Logo */
@@ -437,36 +441,28 @@ h1{
   font-family: 'louis_george_cafebold';
   font-size: 20px;
   margin-left: 40px;
-  color:azure;
-  text-shadow: 0px 0px 20px black; 
+
 }
     
 h1#maintitle{ 
   font-size: 20vw;
   margin-left: 2%;
-  transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .color-list {
   font-family: 'breadley_sansregular';
   font-size:5px;
-  color:black;
-  display: flex;
-  justify-content: center;
- }
+}
 
   
 .name {
   font-size: 4vw;
-  opacity: 1;
 }
 
 #norvpicture{
   height:70%;
   width:70%;
   margin:60px;
-  box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
 
 aside{
@@ -474,18 +470,10 @@ aside{
 }
   
 h1#norvtitle{
-  text-align: center;
-  font-family: 'louis_george_cafebold';
-  opacity: 4;
-  filter: blur(4px);
   font-size:35px;
   margin-right: 40px;
-  font-style: italic;
-  border: 0.3vw solid rgba(255, 255, 255, 0.562);
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
   
-
 p{
   font-family: 'louis_george_cafebold';
   justify-content: center;

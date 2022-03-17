@@ -1,21 +1,11 @@
 /*                         
-*   Stylesheet: espagne.html  
+*   Stylesheet: canada.html  
 * 
 */
 
 body {
   background-color: #11221c;
-  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
-}
-
-/* Link */
-
-a{
-  color:azure;
-}
-
-a:visited{
-  color:rgba(240, 255, 255, 0.692);
+  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );   
 }
   
 /* Video */
@@ -27,6 +17,7 @@ a:visited{
   min-height: 100%;
   object-fit: cover;
 }
+
   
 #videocontener{
   width:90%;
@@ -70,13 +61,15 @@ h1#maintitle{
   }
 }
 
-#valapicture{
+#crcpicture{
   margin-left:80px;
   width:30%;
   height:30%;
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
 }
   
+
+
 h2{
   color:azure;
   text-shadow: 0px 0px 20px black; 
@@ -113,8 +106,8 @@ h4{
   color:azure;
   text-shadow: 0px 0px 20px black; 
 }
-  
 
+/* Aside */
 aside {
   font-family:'louis_george_cafebold';
   color:azure;
@@ -126,6 +119,20 @@ aside {
   color: #ffffff;
   border: 3px solid rgba(255, 255, 255, 0.247);
   background-color: #10382267;
+}
+
+  
+
+h1#canadtitle{
+  text-align: center;
+  font-family: 'louis_george_cafebold';
+  opacity: 4;
+  filter: blur(4px);
+  font-size:35px;
+  margin-right: 40px;
+  font-style: italic;
+  border: 0.3vw solid rgba(255, 255, 255, 0.562);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 /* Paragraph */
@@ -149,22 +156,9 @@ section p{
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
   
-#espdescrp{
+#crcdescrp{
   text-align: center;
 }
-
-h1#esptitle{
-  text-align: center;
-  font-family: 'louis_george_cafebold';
-  opacity: 4;
-  filter: blur(4px);
-  font-size:35px;
-  margin-right: 40px;
-  font-style: italic;
-  border: 0.3vw solid rgba(255, 255, 255, 0.562);
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
   
 @keyframes fade-in {
   100% {
@@ -250,6 +244,15 @@ th:hover, td:hover{
 }
   
   
+/* Link */
+a{
+  color:azure;
+}
+
+a:visited{
+  color:rgba(240, 255, 255, 0.692);
+}
+
 /* ------ Volets ------ */
 #volet1 {
   background: #f4f4f48d; 
@@ -367,6 +370,7 @@ footer {
 /* -------------------- */
   
  /* ------ Font ------ */
+ 
 @font-face {
   font-family: 'gin_and_soda_personal_useRg';
   src: url('../font/font_title/gin_and_soda_personal_use-webfont.woff2') format('woff2'),
@@ -416,7 +420,6 @@ h1{
 h1#maintitle{ 
   font-size: 20vw;
   margin-left: 2%;
-
 }
 
 .color-list {
@@ -428,7 +431,7 @@ h1#maintitle{
   font-size: 4vw;
 }  
 
-#valapicture{
+#crcpicture{
   height:70%;
   width:70%;
   margin:60px;
@@ -437,12 +440,14 @@ h1#maintitle{
 aside{
   display: none;
 }
+
   
-h1#esptitle{
+h1#canadtitle{
   font-size:35px;
   margin-right: 40px;
 }
   
+
 p{
   font-size: 25;
 }
