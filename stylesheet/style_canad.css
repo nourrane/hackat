@@ -136,14 +136,16 @@ h1#canadtitle{
 }
 
 /* Paragraph */
-p{
-  color: azure;
+p{  
+  padding:5px;
   font-family: 'louis_george_cafebold';
-  padding-bottom: 1rem;
-  margin:60px;
-  font-size: 18px;
-  line-height: 28px;
+  margin-right:10%;
+  margin-left:10%;
+  font-size: 1.25rem;
+  color:azure;
+  text-justify: auto;
 }
+
   
   /* Logo */
 .logo{

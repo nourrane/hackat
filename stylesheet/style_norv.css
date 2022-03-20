@@ -148,13 +148,15 @@ aside {
 }
 
 /* Paragraph */
-p{
-  color: azure;
+p{  
+
   font-family: 'louis_george_cafebold';
-  padding-bottom: 1rem;
-  margin:60px;
-  font-size: 18px;
-  line-height: 28px;
+  margin-right:10%;
+  margin-left:10%;
+  font-size: 1.25rem;
+  color:azure;
+  text-justify: auto;
+  padding:10px;
 }
 
 section p{

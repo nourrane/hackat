@@ -48,6 +48,8 @@ h1#maintitle{
   font-size: 10vw;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  margin-left:0%;
+
 }
 
 @keyframes scale {
@@ -56,12 +58,13 @@ h1#maintitle{
   }
 }
 
+
 h1{
   color: azure;
   text-shadow: 0px 0px 20px black; 
   font-family: 'breadley_sansregular';
   font-size:45px;
-  margin:20px;
+  margin-left:10%;
 }
 
 h2{
@@ -195,8 +198,11 @@ h2{
 p{  
 
     font-family: 'louis_george_cafebold';
-    margin:25px;
+    margin-right:10%;
+    margin-left:10%;
+    font-size: 1.25rem;
     color:azure;
+    text-justify: auto;
 }
 
 /* Logo */
@@ -242,14 +248,31 @@ p{
 /* List */
 
 ul{
+    
     font-family: 'louis_george_cafebold';
     list-style-type:unset;
     color:azure;
+    margin-left:30%;
+    margin-right:30%;
+    font-size: 1.5rem;
+    position: relative;
+    list-style: none;
+    
 }
 
 ul li::before{
-    margin-right:5px;
-    color:#baa2eb
+    margin-right:8px;
+    color:#baa2eb;
+
+    content: "";
+    position: relative;
+    top: 6px;
+    left: 5px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-image: url("../img/icon/avion.png");
 }
 
 /* ------ Font ------ */
@@ -308,9 +331,13 @@ body > footer {
 
 h1#maintitle{ 
   font-family: 'gin_and_soda_personal_useRg'; 
-  font-size:20vw;
+  font-size : 4rem;
+  margin-right:10%;
 }
-
+ul{
+  margin-right:10%;
+  margin-left:10%;
+}
 .container { 
   background-color: transparent;
   margin:0;
@@ -318,6 +345,7 @@ h1#maintitle{
 
 p{
   font-size:15px;
+  text-justify: auto;
 }
 
 .name {
@@ -336,6 +364,7 @@ h1#maintitle{
 
 p{
   font-size:25px;
+  text-justify: auto;
 }
 
 .container { 
@@ -359,6 +388,7 @@ p{
   font-size:17px;
   top : 50%;
   margin-top: -15px;
+  text-justify: auto;
 }
 
 
@@ -398,6 +428,7 @@ p{
   color:black;
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
 }
   
 .description{
