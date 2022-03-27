@@ -48,8 +48,6 @@ h1#maintitle{
   font-size: 10vw;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  margin-left:0%;
-
 }
 
 @keyframes scale {
@@ -58,13 +56,12 @@ h1#maintitle{
   }
 }
 
-
 h1{
   color: azure;
   text-shadow: 0px 0px 20px black; 
   font-family: 'breadley_sansregular';
   font-size:45px;
-  margin-left:10%;
+  margin:20px;
 }
 
 h2{
@@ -172,44 +169,43 @@ h2{
 /* Flex-box CSS */
 
 .color-list {
-    padding:50px;
-    font-family: 'breadley_sansregular';
-    font-size:10px;
-    color:black;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  padding:50px;
+  font-family: 'breadley_sansregular';
+  font-size:10px;
+  color:black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .volet {
-    flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
-    box-shadow: 0 0 30px #424242;
-    padding: 1em;
-    color: rgba(0, 0, 0, 0.473);
-    transition: all 0.5s ease-in-out;
+  flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
+  box-shadow: 0 0 30px #424242;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.473);
+  transition: all 0.5s ease-in-out;
 }
   
 .volet:hover{
-      flex-basis: 30%;
+  flex-basis: 30%;
 }
 
 /* Paragraph */
 
 p{  
 
-    font-family: 'louis_george_cafebold';
-    margin-right:10%;
-    margin-left:10%;
-    font-size: 1.25rem;
-    color:azure;
-    text-justify: auto;
+  font-family: 'louis_george_cafebold';
+  margin:25px;
+  color:azure;
+  margin-right:10%;
+  margin-left:10%;
 }
 
 /* Logo */
 
 .logo{
-    opacity: 0;
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  opacity: 0;
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 
 }
 
@@ -222,18 +218,18 @@ p{
 
   
 .name {
-    font-size: 1.2vw;
-    opacity: 1;
+  font-size: 1.2vw;
+  opacity: 1;
 }
 
 /* ------ Volets ------ */
 #volet1 {
-    background: #f4f4f48d; 
+  background: #f4f4f48d; 
   
 }
 
 #volet2 {
-    background: #f4f4f48d;   
+  background: #f4f4f48d;   
 }
 
 #volet3 {
@@ -248,31 +244,28 @@ p{
 /* List */
 
 ul{
-    
-    font-family: 'louis_george_cafebold';
-    list-style-type:unset;
-    color:azure;
-    margin-left:30%;
-    margin-right:30%;
-    font-size: 1.5rem;
-    position: relative;
-    list-style: none;
-    
+  font-family: 'louis_george_cafebold';
+  list-style-type:unset;
+  color:azure;
+  margin-left:10%;
+  margin-right:10%;
+  font-size:1.5rem;
+  position:relative;
+  list-style:none;
 }
 
 ul li::before{
-    margin-right:8px;
-    color:#baa2eb;
-
-    content: "";
-    position: relative;
-    top: 6px;
-    left: 5px;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    background-size: contain;
-    background-image: url("../img/icon/avion.png");
+  margin-right:8px;
+  color:#baa2eb;
+  content: "";
+  position: relative;
+  top: 6px;
+  left: 5px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-image: url("../img/icon/avion.png");
 }
 
 /* ------ Font ------ */
@@ -331,13 +324,9 @@ body > footer {
 
 h1#maintitle{ 
   font-family: 'gin_and_soda_personal_useRg'; 
-  font-size : 4rem;
-  margin-right:10%;
+  font-size:20vw;
 }
-ul{
-  margin-right:10%;
-  margin-left:10%;
-}
+
 .container { 
   background-color: transparent;
   margin:0;
@@ -345,7 +334,6 @@ ul{
 
 p{
   font-size:15px;
-  text-justify: auto;
 }
 
 .name {
@@ -364,7 +352,6 @@ h1#maintitle{
 
 p{
   font-size:25px;
-  text-justify: auto;
 }
 
 .container { 
@@ -388,7 +375,6 @@ p{
   font-size:17px;
   top : 50%;
   margin-top: -15px;
-  text-justify: auto;
 }
 
 
@@ -428,7 +414,6 @@ p{
   color:black;
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
 }
   
 .description{

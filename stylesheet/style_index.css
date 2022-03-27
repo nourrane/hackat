@@ -98,7 +98,6 @@ h3{
 
 h4{
   font-family: 'louis_george_cafebold';
-  font-size:1.7rem;
 }
 
 
@@ -106,7 +105,7 @@ h4{
 p{
   font-family: 'louis_george_cafebold';
   padding-bottom: 1rem;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -162,6 +161,7 @@ li {
   padding: 5vw;
   border: 3px solid #ffffff; 
   text-align: center;
+  text-justify: auto;
   height: 30vw;
   transition: transform 0.8s;
 }
@@ -185,7 +185,6 @@ li {
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-wrap:wrap;
 }
 
 
@@ -476,7 +475,6 @@ h1#principal{
   font-size:20vw;
 }
 
-
 .name {
   font-size: 4vw;
 }  
@@ -492,6 +490,7 @@ h1#principal{
 }
   
 .container { 
+  max-width: 40vw;
   margin-left:25%;
   margin-right: 25%;
   border-radius: 10px;
@@ -529,6 +528,7 @@ h1#principal{
 }
   
 .container { 
+  max-width: 40vw;
   background-color: #ffffff4f;
   margin-left:15%;
   margin-right:15%;

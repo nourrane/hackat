@@ -129,14 +129,15 @@ aside {
 }
 
 /* Paragraph */
-p{  
+p{
+  color: azure;
   font-family: 'louis_george_cafebold';
   margin-right:10%;
   margin-left:10%;
   font-size: 1.25rem;
   color:azure;
   text-justify: auto;
-  padding:10px;
+  padding: 5px;
 }
 
 section p{
