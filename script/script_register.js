@@ -144,15 +144,16 @@ form.addEventListener("submit", function (event) {
 	event.preventDefault();
 
 	// Validate the different fields of forms (firstname, lastname, email, date of birth, username, password)
-	let nameValid = validateName(form.elements["firstname"], NAME_REQUIRED, NAME_INVALID);
+	let nameValid  = validateName(form.elements["firstname"], NAME_REQUIRED, NAME_INVALID);
     let fnameValid = validateName(form.elements["lastname"],  FNAME_REQUIRED, FNAME_INVALID);
 	let emailValid = validateEmail(form.elements["useremail"], EMAIL_REQUIRED, EMAIL_INVALID);
-    let DOBValid = validateDOB(form.elements["birthdate"], DOB_REQUIRED, DOB_INVALID);
-    let userValid = validateUsername(form.elements["username"], USR_REQUIRED, PSW_LENGTH_REQUIRED);
-    let pswValid = validatePSW(form.elements["userpwd"], PSW_REQUIRED, PSW_INVALID);
+    let DOBValid   = validateDOB(form.elements["birthdate"], DOB_REQUIRED, DOB_INVALID);
+    let userValid  = validateUsername(form.elements["username"], USR_REQUIRED, PSW_LENGTH_REQUIRED);
+    let pswValid   = validatePSW(form.elements["userpwd"], PSW_REQUIRED, PSW_INVALID);
 
 	// If all the field (except maybe DOB (facultative)) are valid then submit
 
+	/*AJAX*/
 	if(DOBValid){ // DOBValid is true if DOB is empty OR correct / DOBValid is false if DOB is not correct
 		if (emailValid && nameValid && fnameValid && userValid && pswValid) {
 			var xhr; 
