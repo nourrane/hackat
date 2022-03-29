@@ -21,6 +21,7 @@ $(document).ready(function(){
   }
 });
 
+// Refreshing chat messages.
 function refreshMessages() {
   $.ajax({
     url: 'htbin/chatget.py',
@@ -29,7 +30,7 @@ function refreshMessages() {
     success: function(data) {
       $('.box .inner').empty();
       for(var i = 0; i < data.length; i++){
-          $('.box .inner').append("<p>" + " > ["+ data[i].time + "] " + data[i].user  + " : " + data[i].msg + "</p>");
+        $('.box .inner').append("<p>" + " > ["+ data[i].time + "] " + data[i].user  + " : " + data[i].msg + "</p>");
       }
     }
   });
