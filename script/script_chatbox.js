@@ -1,37 +1,82 @@
-var isRefresh = false;
 
-$(document).ready(function(){
-    // Form submission
-  $('form').submit(function(e){
-    // Avoid page reload
-    e.preventDefault();
-    // Get the message
-    let get_msg = $('input').val();
-    // Prepare message
-    if( get_msg != ' '){
-      send_ret = $.post("htbin/chatsend.py", "msg=" + get_msg);
-      $('input').val("");
-      refreshMessages();
-      isRefresh = false;
-    }
-  });
-  if(!isRefresh){
-    refreshMessages();
-    isRefresh = true;
-  }
+const form = document.querySelector("#chat-form");
+
+var KEYCODE_ENTER = 13;
+var KEYCODE_ESC = 27;
+
+$(document).keyup(function(e) {
+  if (e.keyCode == KEYCODE_ENTER) $('.save').click();
+  if (e.keyCode == KEYCODE_ESC) $('.cancel').click();
 });
 
-// Refreshing chat messages.
-function refreshMessages() {
-  $.ajax({
-    url: 'htbin/chatget.py',
-    type: 'GET',
-    dataType: 'JSON',
-    success: function(data) {
-      $('.box .inner').empty();
-      for(var i = 0; i < data.length; i++){
-        $('.box .inner').append("<p>" + " > ["+ data[i].time + "] " + data[i].user  + " : " + data[i].msg + "</p>");
-      }
-    }
+$(document).ready(function(){
+    $("button").click(function(){
+        console.log("step0");
+  var text = $('#textbox').val(); 
+  console.log(text)
+  if (text) { // values are not empty
+    console.log("step0.1");
+      $.ajax({
+        
+          type: 'POST',
+          url: "/htbin/chatsend.py", 
+          data: "msg="+text,
+  
+          //script call was *not* successful
+          error: function() { 
+              alert("script call was not successful");
+          }, 
+  
+          // script call was successful 
+          // perl_data should contain the string returned by the Perl script 
+          success: function(datachat){
+            console.log(datachat);
+            $.ajax({
+        
+                type: 'GET',
+                url: "/htbin/chatget.py", 
+        
+                //script call was *not* successful
+                error: function() { 
+                    alert("script get was not successful");
+                }, 
+        
+                // script call was successful 
+                // perl_data should contain the string returned by the Perl script 
+                success: function(datachat2){
+                  console.log(datachat2);
+                  let indice=datachat2.length-1;
+                  console.log(datachat2[indice]);
+                  let mess= document.createElement("li");
+                  mess.id = "message";
+                  mess.className="you";
+                  mess.textContent = datachat2[indice].msg;
+                  document.getElementById("chat").appendChild(mess); 
+                  /*
+                  for (var i in datachat2){
+                    console.log(datachat2[i]);
+                    let mess= document.createElement("li");
+                    mess.id = "message";
+                    mess.className="you";
+                    mess.textContent = datachat2[i].msg;
+                    document.getElementById("chat").appendChild(mess); 
+                    
+                  }*/
+                    var nom = datachat2[indice].user;
+                    var time = datachat2[indice].time;
+                    console.log(nom);
+                    document.getElementById("msg").innerHTML = nom+ " : "+ time;
+                
+      
+                }
+            });   
+            
+
+
+          }
+      });   
+  
+  }
+  return false;
+    });
   });
-}

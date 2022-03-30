@@ -100,9 +100,9 @@ function validateDOB(input, requiredMsg, invalidMsg){
         var date = input.value.split("/");
         let isValidDate = Date.parse(date[1] + "/" + date[0] + "/" + date[2]);
 
-        if(isNaN(isValidDate) || parseInt(date[2])>= DATE.getFullYear() || date[0].length != 2 || date[1].length != 2 || date[2].length != 4){
-			return showMessage(input, invalidMsg, false);
-		}
+        if(isNaN(isValidDate) || parseInt(date[2])>= DATE.getFullYear()){
+            return showMessage(input, invalidMsg, false);
+        }
         return showMessage(input, "", true);
     }
 	return true;
@@ -110,8 +110,7 @@ function validateDOB(input, requiredMsg, invalidMsg){
 
 /* Password validator */
 function validatePSW(input, requiredMsg, invalidMsg){
-	const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/
-
+	const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/
 	if(!hasValue(input, requiredMsg)){
 		return false;
 	}else if(input.value.match(pwdRegex)){
