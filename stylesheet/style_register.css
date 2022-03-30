@@ -21,8 +21,8 @@ a:visited{
 /* Video */
 
 .video-wrapper{
-  opacity: 25%;
-  padding: 0;
+  opacity:25%;
+  padding:0;
   position: fixed;
   z-index: -1;
   min-width: 100%;
@@ -53,16 +53,16 @@ h1{
   color: azure;
   text-shadow: 0px 0px 20px black; 
   font-family: 'breadley_sansregular';
-  font-size: 45px;
-  margin: 20px;
+  font-size:45px;
+  margin:20px;
 }
 
 h2{
   font-family: 'breadley_sansregular';
   color: rgba(240, 255, 255, 0.712);
   text-shadow: 0px 0px 20px black; 
-  font-size: 35px;
-  margin: 20px;
+  font-size:35px;
+  margin:20px;
 }
 
 @keyframes scale {
@@ -75,7 +75,7 @@ h2{
 
 .container{
   background-color: rgba(240, 248, 255, 0.158);
-  display: flex;
+  display:flex;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,7 @@ h2{
 }
 
 .description:hover{
-  opacity: 100%; 
+  opacity:100%; 
 }
 
 .text:hover{
@@ -166,10 +166,10 @@ h2{
 /* Flex-box CSS */
 
 .color-list {
-  padding: 50px;
+  padding:50px;
   font-family: 'breadley_sansregular';
-  font-size: 10px;
-  color: black;
+  font-size:10px;
+  color:black;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -195,17 +195,17 @@ h2{
 /* Noscript (JS desactivated) */
 noscript{
   font-family: 'louis_george_cafebold';
-  margin: 25px;
-  color: rgb(247, 7, 7);
+  margin:25px;
+  color:rgb(247, 7, 7);
 }
-
 /* Paragraph */
+
 p{  
   font-family: 'louis_george_cafebold';
-  margin: 25px;
-  color: azure;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin:25px;
+  color:azure;
+  margin-right:10%;
+  margin-left:10%;
 }
 
 /* Logo */
@@ -225,7 +225,8 @@ p{
 
 /* ------ Volets ------ */
 #volet1 {
-  background: #f4f4f48d;  
+  background: #f4f4f48d; 
+  
 }
 
 #volet2 {
@@ -245,12 +246,12 @@ p{
 ul{
   font-family: 'louis_george_cafebold';
   list-style-type:unset;
-  color: azure;
+  color:azure;
 }
 
 ul li::before{
   margin-right:5px;
-  color: #baa2eb
+  color:#baa2eb
 }
 
 /* ------ Font ------ */
@@ -262,6 +263,7 @@ ul li::before{
   font-style: normal;
     
 }
+  
 
 @font-face {
   font-family: 'baby_dollregular';
@@ -279,6 +281,7 @@ ul li::before{
     font-weight: normal;
     font-style: normal;
 }
+  
   
 @font-face {
     font-family: 'breadley_sansregular';
@@ -304,8 +307,8 @@ body > footer {
 /* ------ Form ------ */
 form {
   font-family: 'louis_george_cafebold';
-  color: azure;
-	max-width: 25%;
+  color:azure;
+	max-width:25%;
 	margin: 10px auto;
 	padding: 0.5rem 1rem;
 }
@@ -323,6 +326,7 @@ form h1 {
 	text-align: center;
 	color: rgb(255, 255, 255);
 }
+
 
 .field {
 	margin-bottom: 0.75rem;
@@ -477,10 +481,11 @@ input[type="radio"] {
 /* ------------- */
 
 /* Media Queries */
+
 @media (min-width:820px) and (max-width:1500px){
 
 h1#maintitle{ 
-  font-size: 20vw;
+  font-size:20vw;
 }
 
 .name {
@@ -489,28 +494,31 @@ h1#maintitle{
 }  
 
 #videocontener{
-  width: 120%;
-  height: 30%;
+  width:120%;
+  height:30%;
 }
  
 #nature{
-  width: 120%;
-  height: 30%;
+  width:120%;
+  height:30%;
 }
   
 .container { 
-  margin-left: 25%;
+  margin-left:25%;
   margin-right: 25%;
   padding: 15vw;
 }
+
 
 .color-list {
   font-size:5px;
 }
 
+ 
 p{
   font-size:20px;
 }
+
 
 .field {
 	width: 90%;
@@ -520,7 +528,7 @@ p{
 
 @media (max-width:800px) and (max-height:1000px){
 h1#maintitle{ 
-  font-size: 20vw;
+  font-size:20vw;
 }
 
 .name {
@@ -529,26 +537,25 @@ h1#maintitle{
 }  
 
 #videocontener{
-  width: 120%;
-  height: 30%;
+  width:120%;
+  height:30%;
 }
 
   
 #nature{
-  width: 120%;
-  height: 30%;
+  width:120%;
+  height:30%;
 }
   
 .container { 
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left:15%;
+  margin-right:15%;
   padding: 15vw;
 }
 
 .color-list {
-  font-size: 5px;
+  font-size:5px;
 } 
-
 p{
   font-size: 20px;
 }
