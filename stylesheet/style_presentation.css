@@ -1,0 +1,417 @@
+/*                         
+*   Stylesheet: presentation.html  
+* 
+*/
+
+
+/* Video */
+
+.video-wrapper{
+  opacity: 25%;
+  padding: 0;
+  position: fixed;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: #11221c;
+  background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );    
+}
+
+/* Link */
+
+a{
+  color: azure;
+}
+
+a:visited{
+  color: rgba(240, 255, 255, 0.692);
+}
+
+/* Header + Title */
+
+header {  
+  text-align: center;
+  padding: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1#maintitle{
+  font-family: 'retroicaregular';
+  color: azure;
+  text-shadow: 0px 0px 20px black;   
+  font-size: 8vw;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1{
+  color: azure;
+  text-shadow: 0px 0px 20px black; 
+  font-family: 'breadley_sansregular';
+  font-size: 45px;
+  margin: 20px;
+}
+
+h2{
+  color: azure;
+  text-shadow: 0px 0px 20px black; 
+  font-family: 'breadley_sansregular';
+  font-size: 45px;
+  margin: 20px;
+}
+
+
+/* Container */
+.container{
+  background-color: rgba(240, 248, 255, 0.158);
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+/* Card */
+
+.card{
+  position: relative;
+  opacity: 0;
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  border-radius: 30px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 15px 0 #fff,
+  inset 0 -10px 0 rgba( 255, 255, 255, 0.25),
+  0 45px 0 rgba(0, 0, 0, 0.15);
+  filter: blur(5px);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.623), rgba(255, 255, 255, 0));
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  transition: transform 0.8s;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.card:hover{
+  transform: translateY(-30px);
+}
+
+.text{
+  opacity: 0;
+  margin: 0px;
+  justify-content: end;
+  padding: 15px;
+}
+
+.description{
+  opacity: 50%;
+  padding: 15px;
+}
+
+.description:hover{
+  opacity: 100%; 
+}
+
+.text:hover{
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  transition: transform 0.8s;
+}
+
+.icon{
+  position: relative;
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff4b;
+
+  box-shadow: 0 10px 0 rgba(255, 255, 255, 0.685),
+  inset 0 -9px 0 rgba( 255, 255, 255, 0.25);
+  z-index: 10000;
+    
+}
+
+.norv{
+  background-image: url(../img/pays/Skudeneshavn.jpg);
+}
+
+.val{
+  background-image: url(../img/pays/Valladolid.jpg);
+}
+
+.carcross{
+  background-image: url(../img/pays/Carcross.jpg);
+}
+
+/* Flex-box CSS */
+
+.color-list {
+  padding: 50px;
+  font-family: 'breadley_sansregular';
+  font-size: 10px;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.volet {
+  flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
+  box-shadow: 0 0 30px #424242;
+  padding: 1em;
+  color: rgba(0, 0, 0, 0.473);
+  transition: all 0.5s ease-in-out;
+}
+  
+.volet:hover{
+  flex-basis: 30%;
+}
+
+/* Paragraph */
+p{  
+
+  font-family: 'louis_george_cafebold';
+  margin:25px;
+  color:azure;
+  margin-right:10%;
+  margin-left:10%;
+}
+
+/* Logo */
+.logo{
+  opacity: 0;
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+  
+.name {
+  font-size: 1.2vw;
+  opacity: 1;
+}
+
+/* ------ Volets ------ */
+#volet1 {
+  background: #f4f4f48d; 
+  
+}
+
+#volet2 {
+  background: #f4f4f48d;   
+}
+
+#volet3 {
+  background: #f4f4f48d; 
+}
+
+#volet4 {
+  background: #f4f4f48d;
+}
+/* -------------------- */
+
+/* List */
+ul{
+  font-family: 'louis_george_cafebold';
+  list-style-type: unset;
+  color: azure;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.5rem;
+  position: relative;
+  list-style: none;
+}
+
+ul li::before{
+  margin-right: 8px;
+  color: #baa2eb;
+  content: "";
+  position: relative;
+  top: 6px;
+  left: 5px;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-image: url("../img/icon/avion.png");
+}
+
+/* ------ Font ------ */
+@font-face {
+  font-family: 'retroicaregular';
+  src: url('../font/font_title/retroica-webfont.woff2') format('woff2'),
+       url('../font/font_tile/retroica-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'baby_dollregular';
+  src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
+         url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+@font-face {
+    font-family: 'louis_george_cafebold';
+    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  
+@font-face {
+    font-family: 'breadley_sansregular';
+    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;  
+}
+/* -------------------- */
+
+/* ------ Footer ------ */
+body > footer {
+    font-family: 'breadley_sansregular';
+    margin-top: 4rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+    color: var(--text-light);
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+  /* -------------------- */
+
+/* Media Queries */
+@media screen and (max-width:900px){
+
+.container { 
+  background-color: transparent;
+  margin: 0;
+}
+
+
+.name {
+  font-size: 2vw;
+  opacity: 1;
+}  
+
+}
+
+@media (min-width:820px) and (max-width:1500px){
+  
+h1#maintitle{
+  font-size:12vw;
+}
+
+p{
+  font-size: 25px;
+}
+
+.container { 
+  background-color: transparent;
+  margin: 0;
+}
+
+.container { 
+  max-width: 40vw;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10px;
+  padding: 15vw;
+}
+
+
+.name{
+  font-size: 4vw;
+}  
+    
+.description p{
+  font-size: 17px;
+  top : 50%;
+  margin-top: -15px;
+}
+
+
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size: 5px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+@media (max-width:800px) and (max-height:1000px){
+
+h1#maintitle{
+  font-size:12vw;
+}
+
+.card{
+  position: relative;
+  opacity: 0;
+  margin: 8px;
+  border-radius: 30px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+  
+.container { 
+  max-width: 40vw;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10px;
+  padding: 15vw;
+}
+
+.name{
+  font-size: 4vw;
+}  
+
+
+.color-list {
+  font-family: 'breadley_sansregular';
+  font-size: 5px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+  
+.description{
+  margin-top: 10%;
+  font-size: 11px;
+  opacity: 50%;
+}
+
+}
+    
