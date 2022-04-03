@@ -24,7 +24,7 @@ $(document).ready(function(){
   
           //script call was *not* successful
           error: function() { 
-              alert("script call was not successful");
+            document.getElementById("msg").innerHTML = "ATTENTION, Il faut imperativement se connecter pour écrire dans le chat";
           }, 
   
           // script call was successful 
@@ -44,6 +44,7 @@ $(document).ready(function(){
                 // script call was successful 
                 // perl_data should contain the string returned by the Perl script 
                 success: function(datachat2){
+
                   console.log(datachat2);
                   let indice=datachat2.length-1;
                   console.log(datachat2[indice]);
@@ -52,20 +53,10 @@ $(document).ready(function(){
                   mess.className="you";
                   mess.textContent = datachat2[indice].msg;
                   document.getElementById("chat").appendChild(mess); 
-                  /*
-                  for (var i in datachat2){
-                    console.log(datachat2[i]);
-                    let mess= document.createElement("li");
-                    mess.id = "message";
-                    mess.className="you";
-                    mess.textContent = datachat2[i].msg;
-                    document.getElementById("chat").appendChild(mess); 
-                    
-                  }*/
-                    var nom = datachat2[indice].user;
-                    var time = datachat2[indice].time;
-                    console.log(nom);
-                    document.getElementById("msg").innerHTML = nom+ " : "+ time;
+                  var nom = datachat2[indice].user;
+                  var time = datachat2[indice].time;
+                  console.log(nom);
+                  document.getElementById("msg").innerHTML = nom+ " : "+ time;
                 
       
                 }

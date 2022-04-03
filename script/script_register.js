@@ -67,8 +67,8 @@ function validateName(input, requiredMsg, messageError){
 
 /* Username validator */
 function validateUsername(input, message, messageLengthError){
-	const userRegex= "^[A-Za-z][A-Za-z0-9_]{7,29}$";
-
+	const userRegex= "^[A-Za-z][A-Za-z0-9_]{5,29}$";
+	console.log("msg :"+input.value);
 	if(input.value.trim() === ""){
 		return showError(input, message);
 	}else if(input.value.length < 6){
@@ -120,25 +120,6 @@ function validatePSW(input, requiredMsg, invalidMsg){
 	
 }
 
-/* If enter is pressed, then check submit */
-/*
-form.addEventListener("keypress", function(e){
-
-	// Validate the different fields of forms (firstname, lastname, email, date of birth, username, password)
-	let nameValid = validateName(form.elements["firstname"], NAME_REQUIRED, NAME_INVALID);
-	let fnameValid = validateName(form.elements["lastname"],  FNAME_REQUIRED, FNAME_INVALID);
-	let emailValid = validateEmail(form.elements["useremail"], EMAIL_REQUIRED, EMAIL_INVALID);
-	let DOBValid = validateDOB(form.elements["birthdate"], DOB_REQUIRED, DOB_INVALID);
-	let userValid = validateUsername(form.elements["username"], USR_REQUIRED, PSW_LENGTH_REQUIRED);
-	let pswValid = validatePSW(form.elements["userpwd"], PSW_REQUIRED, PSW_INVALID);
-
-    if(e.which === 13){ //code number for enter key
-		console.log(emailValid);
-		if (emailValid && nameValid && fnameValid && userValid && pswValid || DOBValid) {
-			document.getElementById("signup").onsubmit();
-		}  
-	} 
-});*/
 
 form.addEventListener("submit", function (event) {
 	event.preventDefault();
@@ -155,9 +136,11 @@ form.addEventListener("submit", function (event) {
 
 	/*AJAX*/
 	if(DOBValid){ // DOBValid is true if DOB is empty OR correct / DOBValid is false if DOB is not correct
+
 		if (emailValid && nameValid && fnameValid && userValid && pswValid) {
 			var xhr; 
-			try {  xhr = new XMLHttpRequest();   }
+			try { 
+				xhr = new XMLHttpRequest(); }
 			catch (e) 
 			{
 				try {   xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
@@ -167,9 +150,7 @@ form.addEventListener("submit", function (event) {
 				catch (e3) {  xhr = false;   }
 				}
 			}
-
 			var formData = new FormData(form);
-			
 			xhr.open('POST', 'htbin/register.py');
 			xhr.send(formData);
 			
