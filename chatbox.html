@@ -1,107 +1,63 @@
-<!-- Adaptation ecran tel -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/icon/icon_onglet.ico"/>
-        <link rel="stylesheet" href="stylesheet/normalize.css"/>
-        <link rel="stylesheet" href="stylesheet/style_index.css"/>
-        <link rel="stylesheet" href="stylesheet/chatbox.css">
+        <link rel="stylesheet" href="stylesheet/style_chatbox.css" />
         <title> Sweetcase </title>
     </head>
-
-   <body> 
-    <div class="background">
-        <div class=" video-wrapper">
-            <video id="videoBG" autoplay muted loop>
-                <source src="img/background_video.mp4" type="video/mp4"/>
-            </video>
-        </div>
-    </div>
-
+    
+   <body>
     <div class="logo">
         <img src="img/icon/logo.png" alt="logo" width="150"/>
     </div>
 
     <header>
-        <h1 id = "principal"> Sweetcase </h1>
-        <h1 id = "slogan"> Collectez le moment </h1>
+        <h1> Chatbox </h1>
     </header>
-    <nav>
-        <div class="color-list">
-            <section class="volet" id="volet1">
-                <h2 class="name"> <a href="index.html">Accueil</a> </h2>
-            </section>
-            <section class="volet" id="volet2">
-                <h2 class="name"><a href="presentation.html">Notre agence</a></h2>
-            </section>
-            <section class="volet" id="volet3">
-                <h2 class="name"><a href="chatbox.html">Chatbox</a></h2>
-            </section>
-            <section class="volet" id="volet4">
-                <h2 class="name"><a href="register.html">Inscription</a></h2>
-            </section>
-        </div>
-    </nav>  
 
-<section>
-<div id="container">
-	
-	<main>
-		<header>
-			<img src=img/pays/nature.jpg alt="">
-			<div>
-				<h2>Chattez avec nous!</h2>
-				<h3>- En ligne -</h3>
-			</div>
-		</header>
-        <div id="discussion">
-		<ul id="chat">
-			<li class="entete" id="msg"> Écrivez dans le chat!</li>
-		</ul>
-         </div>
-		<form id="chat-form">
-             <textarea id="textbox" placeholder="Type your message"></textarea>
-             <button ><img src="img/icon/send-button.png" height="20px" width="20px"></button>
-             
-        </form>
-	</main>
-</div>
-</section>
-<footer>
-    <!-- Credits: https://github.com/Altreus/colourblind -->
-    <a href="javascript:(function(){var s=document.getElementById(&quot;colourblind-styling&quot;);
-            var x=document.getElementById(&quot;videoBG&quot;);x.style.display=&quot;none&quot;;
-            x=document.getElementById(&quot;colourblind-filters&quot;);if(!s){s=document.createElement(&quot;style&quot;);
-            document.body.appendChild(s)}if(!x){x=document.createElement(&quot;div&quot;);
-            x.setAttribute(&quot;style&quot;,&quot;height: 0; padding: 0; margin: 0; line-height: 0;&quot;);
-            x.innerHTML='<svg id=&quot;colorblind-filters&quot; style=&quot;display: none&quot;> 
-            <defs> <filter id=&quot;Protanopia&quot;> <feColorMatrix type=&quot;matrix&quot; values=&quot;0.567,0.433,0,0,0 0.558,0.442,0,0,0 0 0.242,0.758,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /> </filter>
-                   <filter id=&quot;Deuteranomaly&quot;> <feColorMatrix type=&quot;matrix&quot; values=&quot;0.8,0.2,0,0,0 0.258,0.742,0,0,0 0,0.142,0.858,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /> </filter> 
-                   <filter id=&quot;Tritanopia&quot;> <feColorMatrix type=&quot;matrix&quot; values=&quot;0.95,0.05,0,0,0 0,0.433,0.567,0,0 0,0.475,0.525,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /> </filter> 
-                   <filter id=&quot;Monochromia&quot;> <feColorMatrix type=&quot;matrix&quot; values=&quot;0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0.299,0.587,0.114,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /> </filter> 
-                   <filter id=&quot;Achromatomaly&quot;> <feColorMatrix type=&quot;matrix&quot; values=&quot;0.618,0.320,0.062,0,0 0.163,0.775,0.062,0,0 0.163,0.320,0.516,0,0 0,0,0,1,0&quot; in=&quot;SourceGraphic&quot; /> </filter> </defs> </svg>';
-                   document.body.appendChild(x)}var l=[&quot;Protanopia&quot;,&quot;Deuteranopia&quot;,&quot;Tritanopia&quot;,&quot;Monochromia&quot;,&quot;Achromatomaly&quot;];var p=&quot;&quot;;for(var i in l)p+= parseInt(i)+1+&quot;: &quot;+l[i]+&quot; &quot;;var c=parseInt(prompt(&quot;0: Remove &quot; +p))-1;
-                   if(isNaN(c))return;if(c>=l.length)return;if(c==-1){s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;;return}c=l[c];
-                   if(document.getElementById(c))s.innerHTML=&quot;body{-webkit-filter:!!;-moz-filter:!!;-ms-filter:!!;-o-filter:!!;filter:!!;}&quot;.replace(/!!/g,&quot;url(#&quot;+c+&quot;)&quot;);
-                   else s.innerHTML=&quot;body{-webkit-filter:none;-moz-filter:none;-ms-filter:none;-o-filter:none;filter:none;}&quot;})();">
-                   Correctif Couleur</a><br/>
-    <!---->
-    <a href="https://www.instagram.com/"><img src="img/icon/instaIcon.png" height=30 alt="Instagram"></a>
-    <a href="https://www.snapchat.com/"><img src="img/icon/snapIcon.png" height=30 alt = "Snapchat"></a>
-    <a href="https://www.facebook.com/"><img src="img/icon/facebookIcon.png" height=30 alt = "Facebook"></a>
-    <a href="https://www.twitter.com/"><img src="img/icon/twitterIcon.png" height=30 alt = "Twitter"></a>
+    <body>
+        <section>
+            <p>
+                Vous pouvez poster vos messages et commentaires dans cette chatbox.<br/>
+                Cliquez <a id="ret" href="index.html">ici</a> pour revenir à l'accueil.<br/>
+                <strong>Pensez à vous connecter</strong> pour publier un message.
+            </p>
+        </section>
+        <section>
+            <noscript>
+                ATTENTION : Javascript est désactivé dans votre navigateur web. Certaines fonctionnalités ne fonctionneront pas correctement.
+            </noscript>
+                
+            <div class="box">
+                <div class="inner">
+                </div>
+            </div>
+    
+            <form>
+                <input name="msg" class="chat-form" placeholder="Entrez un message..."/>
+            </form>
+    
+        </section>
+    </body>
+   
+    <footer>
+        <a href="https://www.instagram.com/"><img src="img/icon/instaIcon.png" height=30 alt="Instagram"></a>
+        <a href="https://www.snapchat.com/"><img src="img/icon/snapIcon.png" height=30 alt = "Snapchat"></a>
+        <a href="https://www.facebook.com/"><img src="img/icon/facebookIcon.png" height=30 alt = "Facebook"></a>
+        <a href="https://www.twitter.com/"><img src="img/icon/twitterIcon.png" height=30 alt = "Twitter"></a>
 
-    <br/>
+        <br/>
 
-    <a href="#">Nous contacter</a>
-    <a href="#">Recrutement</a>
-    <a href="#">Mentions légales</a>
-    <p class="copyright">Sweetcase © 2022</p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="script/script_chatbox.js"></script>  
+        <a href="#">Nous contacter</a>
+        <a href="#">Recrutement</a>
+        <a href="#">Mentions légales</a>
+        <p class="copyright">Sweetcase © 2022</p>
 
-</body> 
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script/script_chatbox.js"></script>     
+   </body>
+   
 </html>
