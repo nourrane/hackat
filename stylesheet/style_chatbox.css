@@ -14,10 +14,14 @@ a:visited{
 
 /* Paragraph */
 p{
+  background-color: transparent;
   font-family: 'louis_george_cafebold';
   padding-bottom: 1rem;
   text-align: center;
   font-size: 18px;
+}
+p:nth-child(2n){
+  background-color: rgba(204, 204, 204, 0.305);
 }
 
 .box p{
