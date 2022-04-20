@@ -12,7 +12,7 @@ const FNAME_INVALID = "Prénom invalide";
 const EMAIL_REQUIRED = "Entrez votre email";
 const EMAIL_INVALID = "Votre email est incorrecte.";
 
-/* DATE OF BIRTH = DOB */
+/* DATE OF BIRTH */
 const DOB_REQUIRED = "Entrez votre date de naissance.";
 const DOB_INVALID = "Date de naissance invalide.";
 
