@@ -19,12 +19,18 @@ a:visited{
 
 /* Video */
 .video-wrapper{
+  opacity: 15%;
   padding: 0;
   position: fixed;
   z-index: -1;
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+}
+
+#videoBG{
+  min-width: 100rem;
+  min-height: 100rem;
 }
 
 #videocontener{
@@ -137,11 +143,11 @@ li {
 
 .left{
   float: left;
-  
 }
 
 #nature{
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
 /* Container */
@@ -290,8 +296,8 @@ body > footer {
 form {
   font-family: 'louis_george_cafebold';
   color: azure;
-	max-width: 25%;
-	margin: 10px auto;
+	max-width: 40%;
+	margin: auto;
 	padding: 0.5rem 1rem;
 }
 
@@ -308,7 +314,6 @@ form h1 {
 	font-weight: normal;
 	color: rgb(255, 255, 255);
 }
-
 
 .field {
 	margin-bottom: 0.75rem;
@@ -465,8 +470,17 @@ input[type="radio"] {
 @media screen and (max-width:900px){
 
 .container { 
-  background-color: transparent;
-  margin: 0;
+  max-width: 3vw;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15%;
+  border-radius: 10px;
+  padding: 15vw;
+}
+
+#nature{
+  width: 80%;
+  height: 20%;
 }
 
 .name {
@@ -500,25 +514,26 @@ h1#maintitle{
   max-width: 40vw;
   margin-left:25%;
   margin-right: 25%;
+  margin-top: 15%;
   border-radius: 10px;
   padding: 15vw;
 }
 
-p{
-  font-size: 4vw;
-  padding: 2vw;
-}
   
 }
 
-@media (max-width:800px) and (max-height:1030px){
+@media (max-width:800px) and (max-height:1080px){
 h1#maintitle{ 
   font-size: 15vw;
 }
 
 .name {
   font-size: 4vw;
-}  
+} 
+
+.field{
+  font-size: 3vw;
+}
 
 #videocontener{
   width: 120%;
@@ -534,15 +549,11 @@ h1#maintitle{
   max-width: 40vw;
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 15%;
   border-radius: 10px;
   padding: 15vw;
 }
 
-
-p{
-  font-size: 4vw;
-  padding: 2vw;
-}
 
 }
 

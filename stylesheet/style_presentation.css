@@ -3,7 +3,6 @@
 * 
 */
 
-
 /* Video */
 
 .video-wrapper{
@@ -11,9 +10,14 @@
   padding: 0;
   position: fixed;
   z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100rem;
+  min-height: 100rem;
   object-fit: cover;
+}
+
+#videoBG{
+  min-width: 100rem;
+  min-height: 100rem;
 }
 
 body {
@@ -192,10 +196,10 @@ h2{
 p{  
 
   font-family: 'louis_george_cafebold';
-  margin:25px;
-  color:azure;
-  margin-right:10%;
-  margin-left:10%;
+  margin: 25px;
+  color: azure;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 /* Logo */
@@ -288,7 +292,6 @@ ul li::before{
     font-style: normal;
 }
   
-  
 @font-face {
     font-family: 'breadley_sansregular';
     src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
@@ -317,7 +320,6 @@ body > footer {
   background-color: transparent;
   margin: 0;
 }
-
 
 .name {
   font-size: 2vw;
@@ -348,7 +350,6 @@ p{
   border-radius: 10px;
   padding: 15vw;
 }
-
 
 .name{
   font-size: 4vw;
@@ -396,8 +397,8 @@ h1#maintitle{
 
 .name{
   font-size: 4vw;
+  opacity: 1;
 }  
-
 
 .color-list {
   font-family: 'breadley_sansregular';
