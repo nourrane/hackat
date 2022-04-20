@@ -4,7 +4,7 @@ const form = document.querySelector("#login");
 /* If enter is pressed, then check submit */
 form.addEventListener("keypress", function(e){
     console.log(e.which, e.target.value);
-    if(e.which === 13)//code number for enter key
+    if(e.which === 13) //code number for enter key
       form.onsubmit();
 });
 
