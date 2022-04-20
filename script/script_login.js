@@ -24,7 +24,7 @@ form.onsubmit = () => {
     }
     xhr.open('POST', 'htbin/login.py'); 
     xhr.send(formData);
-
+   //xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
             showResponse(this.response);

@@ -24,7 +24,6 @@ const PSW_REQUIRED = "Entrez votre mot de passe.";
 const PSW_INVALID = "Mot de passe faible. (minuscule, majuscule, chiffre)"
 const PSW_LENGTH_REQUIRED = "Au moins 6 caractères.";
 
-
 const DATE = new Date(Date.now());
 
 /* Show a message */
@@ -67,8 +66,8 @@ function validateName(input, requiredMsg, messageError){
 
 /* Username validator */
 function validateUsername(input, message, messageLengthError){
-	const userRegex= "^[A-Za-z][A-Za-z0-9_]{5,29}$";
-	console.log("msg :"+input.value);
+	const userRegex= "^[A-Za-z][A-Za-z0-9_]{7,29}$";
+
 	if(input.value.trim() === ""){
 		return showError(input, message);
 	}else if(input.value.length < 6){
@@ -94,15 +93,19 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 	return true;
 }
 
+
 /* Date of birth validator */
 function validateDOB(input, requiredMsg, invalidMsg){
     if(input.value != ""){
         var date = input.value.split("/");
+		if(DATE.getDate() == parseInt(date[0]) && (DATE.getMonth() + 1) == parseInt(date[1]) && DATE.getFullYear() == parseInt(date[2])){
+			return showMessage(input, "Date d'aujourd'hui. Spécifiez une autre date.", false);
+		}
+		
         let isValidDate = Date.parse(date[1] + "/" + date[0] + "/" + date[2]);
-
-        if(isNaN(isValidDate) || parseInt(date[2])>= DATE.getFullYear()){
-            return showMessage(input, invalidMsg, false);
-        }
+        if(isNaN(isValidDate) || parseInt(date[2])>= DATE.getFullYear() || date[0].length != 2 || date[1].length != 2 || date[2].length != 4){
+			return showMessage(input, invalidMsg, false);
+		}
         return showMessage(input, "", true);
     }
 	return true;
@@ -110,7 +113,8 @@ function validateDOB(input, requiredMsg, invalidMsg){
 
 /* Password validator */
 function validatePSW(input, requiredMsg, invalidMsg){
-	const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/
+	const pwdRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/
+
 	if(!hasValue(input, requiredMsg)){
 		return false;
 	}else if(input.value.match(pwdRegex)){
@@ -119,7 +123,6 @@ function validatePSW(input, requiredMsg, invalidMsg){
 	return showError(input, invalidMsg);
 	
 }
-
 
 form.addEventListener("submit", function (event) {
 	event.preventDefault();
@@ -136,11 +139,9 @@ form.addEventListener("submit", function (event) {
 
 	/*AJAX*/
 	if(DOBValid){ // DOBValid is true if DOB is empty OR correct / DOBValid is false if DOB is not correct
-
 		if (emailValid && nameValid && fnameValid && userValid && pswValid) {
 			var xhr; 
-			try { 
-				xhr = new XMLHttpRequest(); }
+			try {  xhr = new XMLHttpRequest();   }
 			catch (e) 
 			{
 				try {   xhr = new ActiveXObject('Microsoft.XMLHTTP'); }
@@ -150,7 +151,9 @@ form.addEventListener("submit", function (event) {
 				catch (e3) {  xhr = false;   }
 				}
 			}
+
 			var formData = new FormData(form);
+			
 			xhr.open('POST', 'htbin/register.py');
 			xhr.send(formData);
 			
