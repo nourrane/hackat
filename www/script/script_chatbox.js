@@ -1,4 +1,3 @@
-var isRefresh = false;
 
 $(document).ready(function(){
   // Form submission
@@ -12,14 +11,12 @@ $(document).ready(function(){
       send_ret = $.post("htbin/chatsend.py", "msg=" + get_msg);
       $('input').val("");
       refreshMessages();
-      isRefresh = false;
     }
   });
-  if(!isRefresh){
-    refreshMessages();
-    isRefresh = true;
-  }
+
 });
+
+setInterval(refreshMessages, 1000);
 
 // Refreshing chat messages.
 function refreshMessages() {
