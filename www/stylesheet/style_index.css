@@ -17,6 +17,20 @@ a:visited{
   color: rgba(240, 255, 255, 0.692);
 }
 
+figure{
+  font-family: 'louis_george_cafebold';
+  display: flex;
+  align-items: center;
+  margin : auto;
+  position: relative;
+}
+
+figcaption{
+  color: #ccc;
+  bottom: 0;
+  position: absolute;
+  margin-left: auto;
+}
 /* Video */
 .video-wrapper{
   opacity: 15%;
@@ -147,7 +161,6 @@ li {
 
 #nature{
   box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
 }
 
 /* Container */
@@ -469,6 +482,14 @@ input[type="radio"] {
 
 @media screen and (max-width:900px){
 
+figure{
+  width: 30vw;
+}
+
+figcaption{
+  font-size: smaller;
+}
+
 .container { 
   max-width: 3vw;
   margin-left: 25%;
@@ -477,6 +498,7 @@ input[type="radio"] {
   border-radius: 10px;
   padding: 15vw;
 }
+
 
 #nature{
   width: 80%;
@@ -491,6 +513,14 @@ input[type="radio"] {
 }
 
 @media (min-width:820px) and (max-width:1500px){
+
+figure{
+  width: 30vw;
+}
+
+figcaption{
+  font-size: smaller;
+}
 
 h1#maintitle{ 
   font-size:15vw;
@@ -523,6 +553,15 @@ h1#maintitle{
 }
 
 @media (max-width:800px) and (max-height:1080px){
+
+figure{
+  width: 30vw;
+}
+
+figcaption{
+  font-size: smaller;
+}
+
 h1#maintitle{ 
   font-size: 15vw;
 }
