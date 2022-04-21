@@ -32,7 +32,7 @@ form.onsubmit = () => {
     return false;
 };
 
-/* Showing the response*/
+/* Showing the response */
 showResponse = data => {
     var text = data;
     if(text.includes("Bonjour")){
