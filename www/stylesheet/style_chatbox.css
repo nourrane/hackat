@@ -54,7 +54,6 @@ h1{
   box-shadow: 0 10px 0 rgba(255, 255, 255, 0.685),
   inset 0 -9px 0 rgba( 255, 255, 255, 0.25);
   z-index: 10000;
-    
 }
 
 /* Noscript (JS desactivated) */
@@ -102,19 +101,19 @@ p{
 }
   
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
   
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;  
 }
 /* -------------------- */
 

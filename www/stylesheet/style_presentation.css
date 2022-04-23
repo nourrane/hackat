@@ -194,7 +194,6 @@ h2{
 
 /* Paragraph */
 p{  
-
   font-family: 'louis_george_cafebold';
   margin: 25px;
   color: azure;
@@ -206,7 +205,6 @@ p{
 .logo{
   opacity: 0;
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-
 }
 
 @keyframes fade-in {
@@ -216,7 +214,6 @@ p{
   }
 }
 
-  
 .name {
   font-size: 1.2vw;
   opacity: 1;
@@ -225,7 +222,6 @@ p{
 /* ------ Volets ------ */
 #volet1 {
   background: #f4f4f48d; 
-  
 }
 
 #volet2 {
@@ -279,43 +275,42 @@ ul li::before{
 @font-face {
   font-family: 'baby_dollregular';
   src: url('../font/font_babydoll_redhands/baby_doll-webfont.woff2') format('woff2'),
-         url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
+       url('../font/font_babydoll_redhands/baby_doll-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
   
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
   
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;  
 }
 /* -------------------- */
 
 /* ------ Footer ------ */
 body > footer {
-    font-family: 'breadley_sansregular';
-    margin-top: 4rem;
-    padding: 2rem 1rem 1.5rem 1rem;
-    color: var(--text-light);
-    font-size: 1rem;
-    text-align: center;
-    border-top: 1px solid var(--border);
-  }
-  /* -------------------- */
+  font-family: 'breadley_sansregular';
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+/* -------------------- */
 
 /* Media Queries */
 @media screen and (max-width:900px){
-
 .container { 
   background-color: transparent;
   margin: 0;
@@ -360,7 +355,6 @@ p{
   top : 50%;
   margin-top: -15px;
 }
-
 
 .color-list {
   font-family: 'breadley_sansregular';

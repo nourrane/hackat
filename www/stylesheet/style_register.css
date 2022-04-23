@@ -181,7 +181,7 @@ h2{
 }
 
 .volet {
-  flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
+  flex: 0 0 20%; 
   box-shadow: 0 0 30px #424242;
   padding: 1em;
   color: rgba(0, 0, 0, 0.473);
@@ -226,7 +226,6 @@ p{
     filter: blur(0);
   }
 }
-
 
 /* ------ Volets ------ */
 #volet1 {
@@ -277,20 +276,21 @@ ul li::before{
 }
   
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
   
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;  
 }
+
 /* -------------------- */
 
 /* ------ Footer ------ */
@@ -401,7 +401,6 @@ input.success:focus,
 textarea.success:focus {
 	box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
 }
-
 
 button {
 	background: #0d6dfd28;

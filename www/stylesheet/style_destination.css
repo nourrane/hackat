@@ -43,15 +43,14 @@ a:visited{
 
 /* Header + Title */
 header {  
-    font-family: 'gin_and_soda_personal_useRg';
-    text-align: center;
-    padding: 2%;
-    background-repeat: no-repeat;
-    background-size: cover  ;
-    background-position: center;
-    top: 0;
-    left: 0;
-
+  font-family: 'gin_and_soda_personal_useRg';
+  text-align: center;
+  padding: 2%;
+  background-repeat: no-repeat;
+  background-size: cover  ;
+  background-position: center;
+  top: 0;
+  left: 0;
 }
 
 h1{
@@ -78,7 +77,6 @@ h1#title{
   border: 0.3vw solid rgba(255, 255, 255, 0.562);
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
-
 
 
 @keyframes scale {
@@ -174,7 +172,6 @@ section p{
 .logo{
   opacity: 0;
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-
 }
 
 #descrp{
@@ -203,7 +200,6 @@ li {
 
 #left{
   float: left;
-  
 }
 
 #right{
@@ -287,13 +283,11 @@ tr:nth-child(2n+1){
 
 /* ------ Volets ------ */
 #volet1 {
-    background: #f4f4f48d; 
-  
+  background: #f4f4f48d; 
 }
 
 #volet2 {
-    background: #f4f4f48d; 
-    
+  background: #f4f4f48d; 
 }
 
 #volet3 {
@@ -310,6 +304,7 @@ tr:nth-child(2n+1){
 .fig{
   text-align: center;
 }
+
 figure.snip{
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
@@ -372,7 +367,6 @@ figure.snip:before {
   transform: rotate(110deg) translateY(-50%);
 }
 
-
 figure.snip:hover img {
   opacity: 1;
   -webkit-transform: scale(1.1);
@@ -421,19 +415,19 @@ footer {
 }
   
 @font-face {
-    font-family: 'louis_george_cafebold';
-    src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'louis_george_cafebold';
+  src: url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/louis_george_cafe_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
   
 @font-face {
-    font-family: 'breadley_sansregular';
-    src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
-         url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;  
+  font-family: 'breadley_sansregular';
+  src: url('../font/font_breadley_caf/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../font/font_breadley_caf/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;  
 }
 /* -------------------- */
  
@@ -465,7 +459,6 @@ h1#maintitle{
   border-radius: 10px;
   padding: 15vw;
 }
-
 
 #picture{
   height: 60%;
