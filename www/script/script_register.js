@@ -94,7 +94,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 }
 
 
-/* Date of birth validator */
+/* Date of birth (DOB) validator */
 function validateDOB(input, requiredMsg, invalidMsg){
     if(input.value != ""){
         var date = input.value.split("/");
