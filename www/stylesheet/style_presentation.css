@@ -139,7 +139,7 @@ h2{
 }
 
 .norv{
-  background-image: url(../img/panier/p1.jpg);
+  background-image: url(../img/panier/p32.jpg);
 }
 
 .val{
@@ -161,6 +161,8 @@ h2{
   text-align: center;
   justify-content: center;
 }
+
+
 
 .volet {
   flex: 0 0 20%; /*flex-grow | flex-shrink | flex-basis*/
@@ -375,7 +377,7 @@ h1#maintitle{
   
 .container { 
   width: 350;
-
+  
   border-radius: 10px;
   padding: 15vw;
 }
