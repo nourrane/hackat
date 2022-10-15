@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: #11221c;
+  background-color: #04a0db;
   background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );    
 }
 
@@ -131,7 +131,7 @@ h2{
 
 .description{
   opacity: 50%;
-  padding: 15px;
+  padding-bottom: 15px;
 }
 
 .description:hover{
@@ -157,11 +157,11 @@ h2{
 }
 
 .norv{
-  background-image: url(../img/pays/Skudeneshavn.jpg);
+  background-image: url(../img/panier/p1.jpg);
 }
 
 .val{
-  background-image: url(../img/pays/Valladolid.jpg);
+  background-image: url(../img/panier/p2.jpg);
 }
 
 .carcross{
@@ -380,6 +380,15 @@ h1#maintitle{
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
 }
+
+.card2{
+  position: relative;
+  opacity: 0;
+  margin: 8px;
+  border-radius: 30px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
   
 .container { 
   max-width: 40vw;
@@ -409,4 +418,25 @@ h1#maintitle{
 }
 
 }
-    
+
+.container2 { 
+  max-width: 40vw;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10px;
+  padding: 15vw;
+
+}
+
+.container:hover{
+  transform: translateY(-10px);
+  opacity: 100%;
+}
+
+.normal{
+  margin: 10vw;
+}
+
+.content{
+  padding-top: 200px;
+}
