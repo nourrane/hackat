@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/icon/logo.png"/>
         <link rel="stylesheet" href="stylesheet/normalize.css"/>
-        <link rel="stylesheet" href="stylesheet/style_destination.css"/>
+        <link rel="stylesheet" href="stylesheet/style_register.css"/>
         <title> Ecoeats </title>
     </head>
    <body>
@@ -19,11 +19,10 @@
           </a>
           <a id="head">
             Mon compte
-          </a>
-          
-          
+          </a>            
     </div>
    
+    
 
        
 
@@ -43,58 +42,39 @@
             <section class="volet" id="volet4">
                 <h2 class="name"><a href="register.html">Inscription</a></h2>
             </section>
+            <section class="volet" id="volet4">
+                <h2 class="name"><a href="register.html">livreur</a></h2>
+            </section>
         </div>
     </nav>    
 
-    <div>
-        <CENTER>
-        <h2> Vous avez choisi le panier fraicheure </h2>
-        <p class="descr">Voici son contenu et sa provenance</p>
-        <table class="tabsites">
-            <tr>
-                <th>Tomates</th>
-                <td> La Ferme d'Arvernis</td>
-            </tr>
-            <tr>
-                <th>Oignons</th>
-                <td>La Ferme des Pradeaux </td>
-            </tr>
-            <tr>
-                <th>Poires</th>
-                <td> La Ferme de la Moulerette </td>
-            </tr>
-            <tr>
-                <th>Artichauts </th>
-                <td> La Ferme des Pradeaux </td>
-            </tr>
-        </table>
-
-        <p class="descr"> poids moyen : 3kg<br>
-        paniers restants : 3</p>
-
-        <a class="button"
-        type="button" href="presentation.html" style="font-size:120%">Réserver : 2.99€</a>
-        </CENTER>
-
-        
-
+    <div class="container_register">
+        <form id="signup" name="signup">
+            <h2>S'inscrire</h2>
+            <div class="field">
+                <label> <span>*</span> produits</label>
+                <input type="text" id="useremail" name="useremail" placeholder="Entrer produit"/>
+                <small></small>
+            </div>
+            <div class="field">
+                <button type="submit" class="full">Envoyer</button>
+            </div>
+        </form>
     </div>
 
-    
-        
 
         <footer>
             <a href="https://www.instagram.com/"><img src="img/icon/instaIcon.png" height=30 alt="Instagram"></a>
             <a href="https://www.snapchat.com/"><img src="img/icon/snapIcon.png" height=30 alt = "Snapchat"></a>
             <a href="https://www.facebook.com/"><img src="img/icon/facebookIcon.png" height=30 alt = "Facebook"></a>
             <a href="https://www.twitter.com/"><img src="img/icon/twitterIcon.png" height=30 alt = "Twitter"></a>
-
+            
             <br/>
 
             <a href="#">Nous contacter</a>
             <a href="#">Recrutement</a>
             <a href="#">Mentions légales</a>
-            <p class="copyright">Sweetcase © 2022</p>
+            <p class="copyright">Ecoeats © 2022</p>
         </footer>
    </body>
 </html>

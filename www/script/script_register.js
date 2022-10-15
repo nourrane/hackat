@@ -168,5 +168,5 @@ form.addEventListener("submit", function (event) {
 
 showResponse = data => {
     var text = data;
-    document.getElementById("signup").innerHTML = "Merci de votre inscription ! Bienvenue sur Sweetcase.";
+    document.getElementById("signup").innerHTML = "Merci de votre inscription ! Bienvenue sur Ecoeats.";
 };
