@@ -8,6 +8,44 @@ body {
   background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
 }
 
+h2#credit{ 
+ 
+  font-size: 5vw;
+  float: right;
+}
+
+a#head {
+  position: relative;
+  color: white;
+  border: 2px solid #7cb33e;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  transition: all .2s;
+  float: right;
+  margin : 10px;
+}
+
+a#head:hover {
+  background-color: #7cb33e;;
+}
+
+a#head span {
+  
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background: #7cb33e;;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  border: 4px solid #121212;
+  border-radius: 50%;
+}
+
 /* Link */
 a{
   color: azure;
