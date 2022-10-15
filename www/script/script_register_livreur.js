@@ -29,7 +29,7 @@ function showSuccess(input) {
 
 /* Return an error if a field is empty */
 function hasValue(input, message) {
-	console.log(input)
+	console.log(input.value)
 	if (input.value.trim() === "") {
 		return showError(input, message + "\n");
 	}
@@ -132,21 +132,21 @@ form.addEventListener("submit", function (event) {
 			}
 
 			var formData = new FormData(form);
-			
+			console.log(form)
 			xhr.open('POST', 'htbin/paniersend.py');
 			xhr.send(formData);
 			
-			xhr.onreadystatechange = function(){
+			/*xhr.onreadystatechange = function(){
 				if(this.readyState == 4 && this.status == 200){
 					showResponse(this.response);
 				}
-			}
+			}*/
 		}
 	}
 });
 
-showResponse = data => {
+/*showResponse = data => {
     var text = data;
     document.getElementById("signup").innerHTML = "Merci de votre inscription ! Bienvenue sur Ecoeats.";
-};
+};*/
 console.log("test")
