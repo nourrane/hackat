@@ -4,6 +4,11 @@
 */
 
 /* Link */
+
+body {
+  background-color: #04a0db;
+}
+
 a{
   color: azure;
 }
@@ -22,7 +27,7 @@ p{
 }
 
 p:nth-child(2n){
-  background-color: rgba(204, 204, 204, 0.305);
+  background-color: #04a0db;
 }
 
 .box p{
