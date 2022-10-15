@@ -3,6 +3,14 @@
 * 
 */
 
+h2#credit{ 
+ 
+  font-size: 5vw;
+  float: right;
+}
+
+
+
 body {
   background-color: #04a0db;
   background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );    
@@ -19,20 +27,7 @@ a:visited{
 
 /* Video */
 
-.video-wrapper{
-  opacity: 25%;
-  padding: 0;
-  position: fixed;
-  z-index: -1;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-}
 
-#videoBG{
-  min-width: 100rem;
-  min-height: 100rem;
-}
 
 /* Header + Title */
 header {  
