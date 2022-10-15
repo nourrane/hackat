@@ -25,6 +25,7 @@ form_data = dict()
 
 form = cgi.FieldStorage()
 for name in list(form.keys()):
+	print(name)
 	if name.lower() == 'userpwd':
 		form_data[name] = hashlib.sha512(form.getfirst(name).encode('utf-8')).hexdigest()
 	else:
