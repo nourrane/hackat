@@ -20,9 +20,9 @@ print('Cache-Control: no-cache')
 print('Content-type: application/json')
 print('')
 
-data_file = open('../data/panier.dat','rb')
-data = pickle.loads(data_file.read())
-data_file.close()
+##data_file = open('../data/panier.dat','rb')
+##data = pickle.loads(data_file.read())
+##data_file.close()
 
 
 form_data = dict()

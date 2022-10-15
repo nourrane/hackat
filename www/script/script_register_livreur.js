@@ -6,6 +6,8 @@ const NAME_INVALID = "Nom invalide.";
 
 const DATE = new Date(Date.now());
 
+console.log("test")
+
 /* Show a message */
 function showMessage(input, message, type) {
 	const msg = input.parentNode.querySelector("small");
@@ -27,6 +29,7 @@ function showSuccess(input) {
 
 /* Return an error if a field is empty */
 function hasValue(input, message) {
+	console.log(input)
 	if (input.value.trim() === "") {
 		return showError(input, message + "\n");
 	}
@@ -43,7 +46,7 @@ function validateName(input, requiredMsg, messageError){
 	}
 	return showError(input, messageError);
 }
-
+console.log("test")
 /* Username validator */
 function validateUsername(input, message, messageLengthError){
 	const userRegex= /^[A-Za-z][A-Za-z0-9_]{0,29}$/;
@@ -108,18 +111,14 @@ form.addEventListener("submit", function (event) {
 	event.preventDefault();
 
 	// Validate the different fields of forms (firstname, lastname, email, date of birth, username, password)
-	let nameValid  = validateName(form.elements["firstname"], NAME_REQUIRED, NAME_INVALID);
-    let fnameValid = validateName(form.elements["lastname"],  FNAME_REQUIRED, FNAME_INVALID);
-	let emailValid = validateEmail(form.elements["useremail"], EMAIL_REQUIRED, EMAIL_INVALID);
-    let DOBValid   = validateDOB(form.elements["birthdate"], DOB_REQUIRED, DOB_INVALID);
-    let userValid  = validateUsername(form.elements["username"], USR_REQUIRED, PSW_LENGTH_REQUIRED);
-    let pswValid   = validatePSW(form.elements["userpwd"], PSW_REQUIRED, PSW_INVALID);
+	let basketnameValid  = validateName(form.elements["basketname"], NAME_REQUIRED, NAME_INVALID);
+    
 
 	// If all the field (except maybe DOB (facultative)) are valid then submit
 
 	/*AJAX*/
-	if(DOBValid){ // DOBValid is true if DOB is empty OR correct / DOBValid is false if DOB is not correct
-		if (emailValid && nameValid && fnameValid && userValid && pswValid) {
+	if(basketnameValid){ // DOBValid is true if DOB is empty OR correct / DOBValid is false if DOB is not correct
+		if (/*emailValid && nameValid && fnameValid && userValid && pswValid*/ 1==1) {
 			var xhr; 
 			try {  xhr = new XMLHttpRequest();   }
 			catch (e) 
@@ -134,7 +133,7 @@ form.addEventListener("submit", function (event) {
 
 			var formData = new FormData(form);
 			
-			xhr.open('POST', 'htbin/register.py');
+			xhr.open('POST', 'htbin/paniersend.py');
 			xhr.send(formData);
 			
 			xhr.onreadystatechange = function(){
@@ -150,3 +149,4 @@ showResponse = data => {
     var text = data;
     document.getElementById("signup").innerHTML = "Merci de votre inscription ! Bienvenue sur Ecoeats.";
 };
+console.log("test")
