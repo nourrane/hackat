@@ -409,4 +409,31 @@ h1#maintitle{
 }
 
 }
-    
+
+.container2 { 
+  background-color: #ffffff4f;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  max-width: 20vw;
+  min-width: 10em;
+  max-height: 65vw;
+  min-height: 30em;
+  overflow: scroll;
+  border-radius: 10px;
+  margin: 10vw;
+  padding: 5vw;
+
+}
+
+.container:hover{
+  transform: translateY(-10px);
+  opacity: 100%;
+}
+
+.container2:hover{
+  transform: translateY(-10px);
+  opacity: 100%;
+}
+.normal{
+  margin: 10vw;
+}
