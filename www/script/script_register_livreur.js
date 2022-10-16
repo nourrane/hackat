@@ -29,6 +29,7 @@ function showSuccess(input) {
 
 /* Return an error if a field is empty */
 function hasValue(input, message) {
+	console.log(input.value)
 	if (input.value.trim() === "") {
 		return showError(input, message + "\n");
 	}
@@ -111,7 +112,7 @@ form.addEventListener("submit", function (event) {
 
 	// Validate the different fields of forms (firstname, lastname, email, date of birth, username, password)
 	let basketnameValid  = validateName(form.elements["basketname"], NAME_REQUIRED, NAME_INVALID);
-    
+    let basketnameValid  = validateName(form.elements["basketname"], NAME_REQUIRED, NAME_INVALID);
 
 	// If all the field (except maybe DOB (facultative)) are valid then submit
 
