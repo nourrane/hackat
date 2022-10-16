@@ -1,17 +1,17 @@
-const form = document.querySelector("#login");
+const form1 = document.querySelector("#login");
 
 
 /* If enter is pressed, then check submit */
-form.addEventListener("keypress", function(e){
+form1.addEventListener("keypress", function(e){
     console.log(e.which, e.target.value);
     if(e.which === 13)//code number for enter key
-      form.onsubmit();
+      form1.onsubmit();
 });
 
   
-form.onsubmit = () => {
+form1.onsubmit = () => {
     var xhr; 
-    var formData = new FormData(form);
+    var formData = new FormData(form1);
     try {  xhr = new ActiveXObject('Msxml2.XMLHTTP');   }
     catch (e) 
     {
