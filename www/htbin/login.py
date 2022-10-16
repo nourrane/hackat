@@ -53,7 +53,7 @@ elif not 'userpwd' in form_data:
 	print('Le mot de pass ne doit pas être vide.')
 #elif form_data['username'] == data['username'] and form_data['userpwd'] == data['userpwd']:
 elif form_data['username'] in t.keys() and t[form_data['username']]==form_data['userpwd']:
-	print(("Bonjour %s %s !" % (data['firstname'], data['lastname'])))
+	print(("Bonjour %s %s" % (data['firstname'], data['lastname'])))
 else:
 	print('Le nom d\'utilisateur et le mot de pass sont invalides.')
 

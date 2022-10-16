@@ -29,7 +29,6 @@ function showSuccess(input) {
 
 /* Return an error if a field is empty */
 function hasValue(input, message) {
-	console.log(input.value)
 	if (input.value.trim() === "") {
 		return showError(input, message + "\n");
 	}
