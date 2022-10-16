@@ -2,12 +2,6 @@
 
     var filter = document.getElementById('colour');
 
-    /* Removing the video background */
-    var video_content = document.getElementById("videoBG")
-    if(video_content){
-        video_content.style.display = "none";
-    }
-
     /* SVG filters */
     if (!filter) {
         filter = document.createElement('div');
